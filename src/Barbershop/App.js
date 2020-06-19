@@ -57,8 +57,6 @@ class App extends React.Component {
             </div>
           </header>
 
-        
-
           <Route exact path='/index' component={Index} />
           <Route exact path='/price' component={Price} />
           <Route exact path='/news' component={News} />
@@ -76,4 +74,3 @@ class App extends React.Component {
 export default App;
 
 
-//test

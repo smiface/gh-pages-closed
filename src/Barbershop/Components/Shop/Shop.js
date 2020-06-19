@@ -52,7 +52,7 @@ class Shop extends React.Component {
                                         () => this.setState({ isBasketShow: !this.state.isBasketShow })
                                     }>Корзина</button> <br />
 
-                                    {this.state.isBasketShow ? <Basket basket={this.state.basket} updateBasket={this.updateBasket} /> : null}
+                                    {this.state.isBasketShow ? <Basket basket={Context.data.basket} updateBasket={this.updateBasket} /> : null}
 
                                     <div className="df_jcsa col-12 ">
 

@@ -1,0 +1,534 @@
+/* @import "/styles/Index.css"; */
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+@font-face {
+  font-family: "PTSansBold";
+  src: url(./Components/Styles/fonts/PTSansBold.ttf)
+}
+
+.border {
+  border: 1px red solid;
+}
+
+.col-1 {
+  width: 60px;
+}
+
+.col-2 {
+  width: 144px;
+}
+
+.col-3 {
+  width: 225px;
+}
+
+.col-4 {
+  width: 312px;
+}
+
+.col-5 {
+  width: 379px;
+}
+
+.col-6 {
+  width: 460px;
+}
+
+.col-7 {
+  width: 540px;
+}
+
+.col-8 {
+  width: 641px;
+}
+
+.col-10 {
+  width: 808px;
+}
+
+.col-12 {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.widthPC {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.ai_center {
+  align-items: center;
+}
+
+.jc_center {
+  justify-content: center;
+}
+
+.df {
+  display: flex;
+}
+
+.df_jcsa {
+  display: flex;
+  justify-content: space-around;
+}
+
+.df_jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.df_col {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+.ta_left * {
+  width: 200px;
+  text-align: left;
+}
+
+.loginBtn {
+  background-image: url('/src/Barbershop/svg/login.svg');
+  background-size: auto;
+  background-position: center;
+  background-color: #000;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+}
+
+/*  */
+
+header {
+  background-color: #000;
+  height: 72px;
+}
+
+header * {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: unset;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "PTSansBold";
+  border: none;
+}
+
+header button {
+  height: 100%;
+  height: 72px;
+  width: 107px;
+  justify-content: center;
+}
+
+header button img {
+  margin-right: 10px;
+}
+
+.indexRhomb * {
+  margin-top: -1px;
+  height: 10px;
+  width: 10px;
+}
+
+.indexRhomb {
+  width: 30px;
+
+}
+
+.content .btn_Black {
+  background-color: #000;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  height: 40px;
+  border: none
+}
+
+.content {
+  background-image: url('./Components/Styles/img/content-bg.png');
+  background-repeat: repeat;
+  display: flex;
+  height: 500px;
+  /* margin-bottom: 50px; */
+}
+
+.index-component {
+  padding-bottom: 50px;
+}
+
+.index-component .content .df_col {
+  justify-content: space-around;
+}
+
+.index-component .content {
+  margin-bottom: 30px;
+}
+
+.content * {
+  color: black;
+  font-size: 14px;
+}
+
+.content h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.indexNews {
+  margin-left: 60px;
+}
+
+.indexGalleryMidLine {
+  margin-left: -85px;
+  margin-right: 70px;
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background-image: url(./Components/Styles/FooterBg.png);
+}
+
+footer * {
+  color: #fff
+}
+
+.color_white {
+  color: white;
+}
+
+footer .btn_Black {
+  background-color: #000;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  height: 40px;
+  border: none
+}
+
+footer .btn_nav {
+  width: 40px;
+}
+
+main * {
+  font-family: "PTSansBold";
+}
+
+
+main * {
+  color: #fff;
+}
+
+
+.index-logo {
+  padding-top: 50px;
+}
+
+.index-info {
+  padding: 50px 0;
+}
+
+.romb {
+  background-color: #000000;
+  height: 10px;
+  width: 10px;
+  transform: rotate(45deg);
+  color: black;
+  margin: 0 20px;
+}
+
+.price-component .line {
+  font-size: 25px;
+  margin-top: -5px;
+  letter-spacing: -5px;
+}
+
+.price-component h2 {
+  font-size: 48px;
+}
+
+.price-component h3 {
+  margin-bottom: 30px;
+}
+
+.price-component.content {
+  height: unset;
+  padding-bottom: 50px;
+}
+
+
+.price-component td {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.mn {
+  margin: 0;
+}
+
+.price-component .df_col {
+  justify-content: unset;
+}
+
+
+
+.news_component .content {
+  height: unset;
+  text-align: left;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.05;
+}
+
+.news_component {
+  padding: 50px;
+}
+
+.news_component .content p {
+  font-size: 16px;
+}
+
+.news_item {
+  margin: 10px 0;
+}
+
+
+.relative {
+  position: relative;
+}
+
+.shop-component {
+  height: unset;
+  padding: 50px 0;
+}
+
+.shop-component nav:nth-child(1) {
+  padding-bottom: 50px;
+}
+.shopItems-component {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* padding: 50px 0; */
+}
+
+.shopItems-component .shop-item {
+  width: 220px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin: 7px;
+  padding-bottom: 16px;
+  box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.5); /* Параметры тени */
+}
+
+.shopItems-component .shop-item img {
+  height: 165px;
+  width: 220px;
+}
+
+.filter {
+  margin: 0;
+}
+
+.filter h3 {
+  font-size: 24px;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.producers {
+  justify-content: space-between;
+  height: unset;
+
+}
+
+.shop-item  p {
+  width: 186px;
+  margin: 15px auto ;
+  height: 42px;
+  text-align: left;
+}
+
+.shopItems-component .shop-item :nth-child(3) {
+  width: 186px;
+  margin: 0 auto; 
+  height: 42px;
+}
+.shop-item :nth-child(3) p {
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.shop-item .btn_Black {
+  width: 60%;
+  height: 100%;
+}
+
+.btn_Black  * {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* сбросил стили от родительского ShopItems */
+.Item-component,
+.Item-component.content * {
+  height: unset;
+  padding: none;
+  margin: none;
+}
+
+.Item-component {
+  height: 75vh;
+  align-items: center;
+}
+
+.slider__main__img{
+  height: 500px;
+  width: 460px;
+}
+
+.slider__secondary__img {
+  height: 150px;
+  width: 140px;
+}
+
+.item__info {
+  padding-top: 50px;
+}
+
+.item__info h3 {
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.item__info .buy_item {
+    height: 40px;
+}
+
+.item__info .item_price  p{
+  width: 186px;
+  height: 42px;
+}
+
+.Item-component  .item_price  {
+  background-color: #e5e5e5;
+  height: 40px;
+}
+
+.filter_group h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.shop_nav {
+  height: unset;
+  margin-top: 20px;
+}
+
+.shop_nav button {
+width: 50px
+}
+
+.shop_nav button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.news_item .content {
+  z-index: 0;
+}
+
+.news_component a {
+  z-index: 55;
+}
+
+.filter_group form{
+  padding-top: 10px;
+}
+
+.filter {
+  height: 678px;
+}
+
+.btn_Fake {
+  background-color: #000000;
+  padding: 50px
+}
+
+.btn_Black {
+  background-color: #000;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  height: 40px;
+  border: none
+}
+
+.basket_sum, 
+.basket_sum p {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.btn_Basket {
+  height: 40px;
+  width: 40px;
+  background-color: #000;
+  color: #fff
+}
+
+.btn_Basket_error {
+  height: 40px;
+  width: 40px;
+  background-color: grey;
+  color: #fff
+}
+
+.btn_cancel_filter {
+  border: none;
+  border-bottom: 1px #000 solid;
+  margin-bottom: 10px
+}
+
+.basket_item {
+  border-bottom: 1px grey solid;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}

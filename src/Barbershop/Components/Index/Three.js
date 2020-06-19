@@ -22,8 +22,8 @@ class Three extends React.Component {
 
 
                                 {/* новости */}
-                                < news className="col-5 df_col indexNews df_jcsb" >
-                                    <h3>КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+                                < news className="col-5 df_col  indexNews df_jcsb " >
+                                    <h3 className=''>КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
                                     <div>
                                         <div>
                                             <p>БАРБЕРШОП «БОРОДИНСКИЙ» АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 ТЕЛЕФОН: +7 (495) 666-02-66</p>
@@ -50,9 +50,9 @@ class Three extends React.Component {
 
                                     <img className="indexGalleryMidLine" src={require('../Styles/img/midLine.png')} />
 
-                                    <div className="col-4 df_col df_jcsa">
+                                    <div className="col-4 df_col df_jcsb ">
 
-                                        <h3>ЗАПИСАТЬСЯ</h3>
+                                        <h3 className=''>ЗАПИСАТЬСЯ</h3>
 
                                         <div className="col-4 df_jcsb ">
                                             УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ

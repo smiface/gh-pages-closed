@@ -43,9 +43,9 @@ class Two extends React.Component {
                             <div className="df_jcsb content col-12">
 
                                 {/* новости */}
-                                <news className="col-5 df_col indexNews df_jcsb">
+                                <news className="col-5 df_col indexNews df_jcsb  ">
                                     <h3>НОВОСТИ</h3>
-                                    <div>
+                                    <div >
                                         <div>
                                             <p>{Context.data.news[Context.data.news.length - 1].title}</p>
                                             <div className="date">
@@ -59,16 +59,29 @@ class Two extends React.Component {
                                                 {Context.data.news[Context.data.news.length - 2].date}
                                             </div>
                                         </div>
+
+                                        <div>
+                                            <p>{Context.data.news[Context.data.news.length - 3].title}</p>
+                                            <div className="date">
+                                                {Context.data.news[Context.data.news.length - 3].date}
+                                            </div>
+                                        </div>
+
                                     </div>
 
-                                    <button className="btn_Black col-2">
-                                        <Link className="color_white" to="/news">Все новости</Link>
+
+
+                                    <Link className="color_white btn_Black col-2" to="/news">
+                                        <button className="btn_Black col-2">
+                                            Все новости
                                     </button>
+                                    </Link>
+
                                 </news>
 
                                 {/* галлерея */}
 
-                                <gallery className="df col-5 ">
+                                <div className="df col-5 ">
 
                                     <img className="indexGalleryMidLine" src={require('../Styles/img/midLine.png')} />
 
@@ -83,7 +96,7 @@ class Two extends React.Component {
                                         </div>
                                     </div>
 
-                                </gallery>
+                                </div>
                             </div>
                         )
 

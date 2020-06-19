@@ -30,7 +30,7 @@ class ShopItems extends React.Component {
 
                             <div className="shopItems-component df_col">
 
-                                {this.state.isBasketShow ? <div> {this.state.basket.map(item =>
+                                {this.state.isBasketShow ? <div> {Context.data.basket.map(item =>
                                     <div>
                                         <img src={require('../Styles/img/item' + item.id + '.png')} />
                                         <p>{item.title}</p>
@@ -52,7 +52,7 @@ class ShopItems extends React.Component {
                                                 <div className="df_jcsa ai_center">
                                                     <p>{item.price} ₽</p>
 
-                                                    <BuyBtn item={item} updateBasket={this.props.updateBasket} basket={this.state.basket} />
+                                                    <BuyBtn item={item} updateBasket={this.props.updateBasket} basket={Context.data.basket} />
                                                 </div>
 
                                             </div>
@@ -75,7 +75,7 @@ class ShopItems extends React.Component {
 
                                                         <div className="df_jcsa ai_center">
                                                             <p>{item.price} ₽</p>
-                                                            <BuyBtn item={item} updateBasket={this.props.updateBasket} basket={this.state.basket} />
+                                                            <BuyBtn item={item} updateBasket={this.props.updateBasket} basket={Context.data.basket} />
                                                         </div>
 
                                                     </div>

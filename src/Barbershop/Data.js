@@ -3,6 +3,8 @@ import Context from './Components/Context'
 
 export const data = {}
 
+data.basket = []
+
 data.news = [
     {
         id:1,

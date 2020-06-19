@@ -204,7 +204,7 @@ header button img {
 
 .indexGalleryMidLine {
   margin-left: -85px;
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 
 footer {
@@ -532,3 +532,25 @@ width: 50px
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
+
+/* @media (max-width: 1000px) {
+
+  header div {
+    width: 720px;
+    border: 5px red solid;
+  }
+
+  header {
+    height: unset;
+  }
+
+  .col-12 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+} */

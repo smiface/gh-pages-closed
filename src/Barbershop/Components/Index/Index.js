@@ -17,9 +17,6 @@ class Index extends React.Component {
           (Context) => {
             return (
               <main className="index-component">
-
-
-
                 <One />
                 <Two />
                 <Three />

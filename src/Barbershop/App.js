@@ -15,7 +15,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      basket: []
+      // basket: []
     }
   }
 
@@ -34,19 +34,20 @@ class App extends React.Component {
       <HashRouter >
         <Context.Provider value={{
           data: data,
-          basket: this.state.basket
+          // basket: this.state.basket
+          // basket: Context.data.basket
         }}>
 
 
           <header className="">
-            <div className="col-12 df_jcsb  ">
+            <div className="col-12 df_jcsb">
 
               <nav className="df_jcsb col-7  ">
-                <Link className="" to="/">Информация</Link>
-                <Link className="" to="/news">Новости</Link>
+                <Link className="" to="/">Магазин</Link>
+                <Link className="" to="/index">Информация</Link>
                 <Link className="" to="/price">Прайс-лист</Link>
-                <Link className="" to="/shop">Магазин</Link>
-                <Link className="" to="/users">Контакты</Link>
+                <Link className="" to="/news">Новости</Link>
+                {/* <Link className="" to="/users">Контакты</Link> */}
               </nav>
 
               <button>
@@ -54,12 +55,14 @@ class App extends React.Component {
                 <div>Вход</div>
               </button>
             </div>
-
           </header>
-          <Route exact path='/' component={Index} />
+
+        
+
+          <Route exact path='/index' component={Index} />
           <Route exact path='/price' component={Price} />
           <Route exact path='/news' component={News} />
-          <Route exact path='/shop' component={Shop} />
+          <Route exact path='/' component={Shop} />
           <Route  path='/item/:id?' component={Item} />
 
 
@@ -73,3 +76,4 @@ class App extends React.Component {
 export default App;
 
 
+//test

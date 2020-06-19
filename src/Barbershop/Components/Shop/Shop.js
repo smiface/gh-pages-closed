@@ -36,9 +36,10 @@ class Shop extends React.Component {
                             <main className="shop-component content ">
                                 <div className="col-12 df_col">
 
-                                    <nav>
+                                    <nav className=''>
                                         <h3>Средства для ухода</h3>
-                                        <div className="df price-nav col-12 ai_center">
+
+                                        <div className="df price-nav ai_center">
                                             <Link to="/index">Главная</Link>
                                             <div className="romb"></div>
                                             <Link to="/shop">Магазин</Link>
@@ -51,7 +52,7 @@ class Shop extends React.Component {
                                         () => this.setState({ isBasketShow: !this.state.isBasketShow })
                                     }>Корзина</button> <br />
 
-                                    {this.state.isBasketShow ? <Basket basket={this.state.basket} updateBasket={this.updateBasket} /> : null}
+                                    {this.state.isBasketShow ? <Basket basket={Context.data.basket} updateBasket={this.updateBasket} /> : null}
 
                                     <div className="df_jcsa col-12 ">
 

@@ -70,7 +70,7 @@ class ShopFilter extends React.Component {
 
 
                                 {
-                                    this.state.finalArr === [] | Context.data.items | false ?
+                                    this.state.finalArr == [] | Context.data.items | false ?
 
                                         null
                                         :

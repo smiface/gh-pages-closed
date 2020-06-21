@@ -1,11 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Context from '../Context'
-import { Link, HashRouter, Route, Router } from 'react-router-dom'
 
 class Item extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    
     render() {
         return (
             <Context.Consumer>
@@ -22,25 +19,25 @@ class Item extends React.Component {
 
                                             <div className="df_col slider">
                                                 {/* основная картинка */}
-                                                <img className="slider__main__img" src={require('../Styles/img/item' + (id + 1) + '.png')} />
+                                                <img className="slider__main__img" src={require('../Styles/img/item' + (id + 1) + '.png')} alt='item_image_1' />
 
                                                 <div className="df_jcsb ">
 
 
-                                                    <img className="slider__secondary__img" src={require('../Styles/img/item' + (id + 1) + '.png')}
+                                                    <img className="slider__secondary__img" src={require('../Styles/img/item' + (id + 1) + '.png')}  alt='item_image_1'
                                                         onClick={
                                                             () => document.querySelector('.slider__main__img').src = require('../Styles/img/item' + (id + 1) + '.png')
                                                         }
                                                     />
 
 
-                                                    <img className="slider__secondary__img" src={require('../Styles/img/item' + (id + 1) + '_2.png')}
+                                                    <img className="slider__secondary__img" src={require('../Styles/img/item' + (id + 1) + '_2.png')} alt='item_image_2'
                                                         onClick={
                                                             () => document.querySelector('.slider__main__img').src = require('../Styles/img/item' + (id + 1) + '_2.png')
                                                         } />
 
 
-                                                    <img className="slider__secondary__img" src={require('../Styles/img/item' + (id + 1) + '_3.png')}
+                                                    <img className="slider__secondary__img" src={require('../Styles/img/item' + (id + 1) + '_3.png')} alt='item_image_3'
                                                         onClick={
                                                             () => document.querySelector('.slider__main__img').src = require('../Styles/img/item' + (id + 1) + '_3.png')
                                                         } />

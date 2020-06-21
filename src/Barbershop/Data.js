@@ -1,6 +1,3 @@
-import React from 'react'
-import Context from './Components/Context'
-
 export const data = {}
 
 data.basket = []

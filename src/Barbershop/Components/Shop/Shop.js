@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Context from '../Context'
-import '../Styles/Index.css'
 import ShopItems from './ShopItems'
-import { Link, HashRouter, Route, Router } from 'react-router-dom'
-import ProducersForm from './producersForm'
+import { Link } from 'react-router-dom'
 import ShopFilter from './ShopFilter'
 import Basket from './Basket'
 
@@ -48,7 +46,7 @@ class Shop extends React.Component {
                                         </div>
                                     </nav>
 
-                                    <button class="btn_Black" onClick={
+                                    <button className="btn_Black" onClick={
                                         () => this.setState({ isBasketShow: !this.state.isBasketShow })
                                     }>Корзина</button> <br />
 
@@ -56,9 +54,8 @@ class Shop extends React.Component {
 
                                     <div className="df_jcsa col-12 ">
 
-
                                         <ShopFilter updateFinalArr={this.updateFinalArr} />
-                                        <div className="col-9 df_col filter_group ">
+                                        <div className="col-9 df_col filter_group">
 
                                             <ShopItems finalArr={this.state.finalArr} updateBasket={this.updateBasket} />
 

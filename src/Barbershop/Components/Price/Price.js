@@ -1,14 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Context from '../Context'
-import '../Styles/Index.css'
-import Footer from '../Footer'
-import { Link, HashRouter, Route, Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class Price extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
+   
     render() {
         return (
             <Context.Consumer>

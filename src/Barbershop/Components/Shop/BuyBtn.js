@@ -1,8 +1,5 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Context from '../Context'
-import '../Styles/Index.css'
-import { Link, Route, Router } from 'react-router-dom'
-import Item from '../Item/Item'
 
 let p1 = new Promise(function (resolve, reject) {
     resolve()
@@ -24,7 +21,7 @@ class ShopItems extends React.Component {
                         <button className="btn_Black col-1" onClick={() => {
 
                             //пуста ли карзина?
-                            Context.data.basket.length == 0 ?
+                            Context.data.basket.length === 0 ?
 
                                 //если корзина пустая
                                 p1.then(() => {
@@ -33,7 +30,7 @@ class ShopItems extends React.Component {
                                 }).then(() => {
                                     //и создать количество
                                     this.setState(state => {
-                                        Context.data.basket.filter(obj => obj == Context.data.items[this.props.item.id - 1])[0].basketSum = 1
+                                        Context.data.basket.filter(obj => obj === Context.data.items[this.props.item.id - 1])[0].basketSum = 1
                                     })
                                 })
 
@@ -42,7 +39,7 @@ class ShopItems extends React.Component {
                                 //если корзина не пустая
 
                                 //такой товар в корзине есть?
-                                Context.data.basket.filter(obj => obj == Context.data.items[this.props.item.id - 1]).length == 0 ?
+                                Context.data.basket.filter(obj => obj === Context.data.items[this.props.item.id - 1]).length===0 ?
 
                                     p1.then(() => {
                                         //если нет добавить товар
@@ -50,7 +47,7 @@ class ShopItems extends React.Component {
                                     }).then(() => {
                                         //и поменять количество на 1
                                         this.setState(state => {
-                                            Context.data.basket.filter(obj => obj == Context.data.items[this.props.item.id - 1])[0].basketSum = 1
+                                            Context.data.basket.filter(obj => obj===Context.data.items[this.props.item.id - 1])[0].basketSum = 1
                                         })
                                     })
 
@@ -58,8 +55,8 @@ class ShopItems extends React.Component {
 
                                     // добавить кол-во +1
                                     this.setState(state => {
-                                        Context.data.basket.filter(obj => obj == Context.data.items[this.props.item.id - 1])[0].basketSum =
-                                        Context.data.basket.filter(obj => obj == Context.data.items[this.props.item.id - 1])[0].basketSum + 1
+                                        Context.data.basket.filter(obj => obj===Context.data.items[this.props.item.id - 1])[0].basketSum =
+                                        Context.data.basket.filter(obj => obj===Context.data.items[this.props.item.id - 1])[0].basketSum + 1
                                     })
 
                                    setTimeout(() => {

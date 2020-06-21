@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Context from '../Context'
-import { Link, HashRouter, Route, Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class Two extends React.Component {
     constructor(props) {
@@ -59,14 +59,6 @@ class Two extends React.Component {
                                                 {Context.data.news[Context.data.news.length - 2].date}
                                             </div>
                                         </div>
-
-                                        <div>
-                                            <p>{Context.data.news[Context.data.news.length - 3].title}</p>
-                                            <div className="date">
-                                                {Context.data.news[Context.data.news.length - 3].date}
-                                            </div>
-                                        </div>
-
                                     </div>
 
 
@@ -83,12 +75,12 @@ class Two extends React.Component {
 
                                 <div className="df col-5 ">
 
-                                    <img className="indexGalleryMidLine" src={require('../Styles/img/midLine.png')} />
+                                    <img className="indexGalleryMidLine" src={require('../Styles/img/midLine.png')} alt='separate line'/>
 
                                     <div className="col-4 df_col df_jcsa">
 
                                         <h3>Галлерея</h3>
-                                        <img src={require('../Styles/img/gallery' + this.state.galleryIndex + '.png')} />
+                                        <img src={require('../Styles/img/gallery' + this.state.galleryIndex + '.png')}  alt='separate line'/>
 
                                         <div className="col-4 df_jcsb">
                                             <button className="btn_Black col-2" onClick={() => this.galleryIndexPrev()} >Назад</button>

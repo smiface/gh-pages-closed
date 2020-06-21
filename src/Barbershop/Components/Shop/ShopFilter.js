@@ -70,7 +70,7 @@ class ShopFilter extends React.Component {
 
 
                                 {
-                                    this.state.finalArr == [] | Context.data.items | false ?
+                                    this.state.finalArr === [] | Context.data.items | false ?
 
                                         null
                                         :
@@ -83,7 +83,8 @@ class ShopFilter extends React.Component {
                                                 item.checked = false
                                             })
 
-                                            this.state.finalArr = false
+                                            // this.state.finalArr = false
+                                            this.setState({ finalArr : false})
 
 
                                         }}> X Снять фильтр</button>
@@ -97,7 +98,7 @@ class ShopFilter extends React.Component {
                                     onClick={() => {
                                         //фильтр производителей
                                         //если нет фильтров   
-                                        (document.querySelectorAll('.filterProducerInput:checked').length == 0) ?
+                                        (document.querySelectorAll('.filterProducerInput:checked').length === 0) ?
                                             // вернуть всё
                                             this.setState({ producerFinalArr: Context.data.items }) :
 
@@ -111,7 +112,7 @@ class ShopFilter extends React.Component {
                                                                 .querySelectorAll('.filterProducerInput:checked')
                                                         )
                                                             .map(item => Number(item.value))
-                                                            .map(item => Context.data.items.filter(elem => elem.producer == Context.data.producer[item]))
+                                                            .map(item => Context.data.items.filter(elem => elem.producer === Context.data.producer[item]))
                                                     })
 
                                                     this.state.x.forEach(element => {
@@ -122,7 +123,7 @@ class ShopFilter extends React.Component {
 
                                                     setTimeout(() => {
                                                         //если товаров нет вернуть []
-                                                        (this.state.producerFiltredArr.length == []) ?
+                                                        (this.state.producerFiltredArr.length === []) ?
                                                             this.setState({
                                                                 producerFinalArr: []
                                                             })
@@ -142,7 +143,7 @@ class ShopFilter extends React.Component {
                                                 setTimeout(() => {
                                                     this.setState({
                                                         finalArr: this.state.producerFinalArr.filter(item =>
-                                                            item.group == Context.data.itemGroup[document.getElementById('itemGroupForm').querySelector('.filterGroupInput:checked').value]
+                                                            item.group === Context.data.itemGroup[document.getElementById('itemGroupForm').querySelector('.filterGroupInput:checked').value]
                                                         )
                                                     })
                                                 }, 4)

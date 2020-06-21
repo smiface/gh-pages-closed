@@ -1,14 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Context from '../Context'
-import '../Styles/Index.css'
-import { Link, Route, Router } from 'react-router-dom'
-import Item from '../Item/Item'
+import { Link } from 'react-router-dom'
 import BuyBtn from './BuyBtn'
-
-let p1 = new Promise(function (resolve, reject) {
-    resolve()
-})
-
 
 
 class ShopItems extends React.Component {
@@ -32,7 +25,7 @@ class ShopItems extends React.Component {
 
                                 {this.state.isBasketShow ? <div> {this.state.basket.map(item =>
                                     <div>
-                                        <img src={require('../Styles/img/item' + item.id + '.png')} />
+                                        <img src={require('../Styles/img/item' + item.id + '.png')} alt='item img' />
                                         <p>{item.title}</p>
                                         <p>Количество : {item.basketSum + 1}</p>
                                     </div>)} </div> : null}
@@ -47,7 +40,7 @@ class ShopItems extends React.Component {
 
                                             //карточка каждого товара
                                             <div className="shop-item df_col">
-                                                <img src={require('../Styles/img/item' + item.id + '.png')} />
+                                                <img src={require('../Styles/img/item' + item.id + '.png')} alt='item img'/>
                                                 <Link to={'item/' + (item.id)}><p>{item.title}</p></Link>
                                                 <div className="df_jcsa ai_center">
                                                     <p>{item.price} ₽</p>
@@ -70,7 +63,7 @@ class ShopItems extends React.Component {
 
                                                     //карточка каждого товара
                                                     <div className="shop-item df_col">
-                                                        <img src={require('../Styles/img/item' + item.id + '.png')} />
+                                                        <img src={require('../Styles/img/item' + item.id + '.png')} alt='item img'/>
                                                         <Link to={'item/' + (item.id)}><p>{item.title}</p></Link>
 
                                                         <div className="df_jcsa ai_center">

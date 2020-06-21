@@ -1,15 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Context from '../Context'
-import '../Styles/Index.css'
 import One from './One'
 import Two from './Two'
 import Three from './Three'
 
 class Index extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
+  
   render() {
     return (
       <Context.Consumer>

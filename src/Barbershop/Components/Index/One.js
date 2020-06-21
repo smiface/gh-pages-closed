@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 
 export default function One() {
     return (
       <div className="col-12 .df_col index-logo ">
         <div className="center">
-          <img src={require('../Styles/indexLogo.png')} />
+          <img src={require('../Styles/indexLogo.png')}  alt='main logo'/>
         </div>
   
         <div className="df_jcsa index-info">

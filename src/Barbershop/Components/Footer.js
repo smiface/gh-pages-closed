@@ -2,9 +2,7 @@ import React from 'react'
 import Context from './Context';
 
 class Footer extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    
 
 
     render() {
@@ -23,19 +21,19 @@ class Footer extends React.Component {
                                             <button className="btn_Black btn_little">
 
                                                 <a href="https://vk.com/htmlacademy">
-                                                    <img src={require('./Styles/img/footer_vk.png')} />
+                                                    <img src={require('./Styles/img/footer_vk.png')} alt='vk_img' />
                                                 </a>
                                             </button>
 
                                             <button className="btn_Black btn_nav">
                                                 <a href="https://www.facebook.com/htmlacademy/">
-                                                    <img src={require('./Styles/img/footer_fb.png')} />
+                                                    <img src={require('./Styles/img/footer_fb.png')} alt='fb_img' />
                                                 </a>
                                             </button>
 
                                             <button className="btn_Black btn_nav">
                                                 <a href="https://www.instagram.com/htmlacademy/">
-                                                    <img src={require('./Styles/img/footer_inst.png')} />
+                                                    <img src={require('./Styles/img/footer_inst.png')}  alt='inst_img'/>
                                                 </a>
                                             </button>
 

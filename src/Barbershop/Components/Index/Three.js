@@ -2,9 +2,7 @@ import React from 'react'
 import Context from '../Context'
 
 class Three extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    
 
 
     render() {
@@ -22,8 +20,8 @@ class Three extends React.Component {
 
 
                                 {/* новости */}
-                                < news className="col-5 df_col  indexNews df_jcsb " >
-                                    <h3 className=''>КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+                                < news className="col-5 df_col indexNews df_jcsb " >
+                                    <h3 className='test'>КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
                                     <div>
                                         <div>
                                             <p>БАРБЕРШОП «БОРОДИНСКИЙ» АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 ТЕЛЕФОН: +7 (495) 666-02-66</p>
@@ -38,7 +36,9 @@ class Three extends React.Component {
                                     </div>
                                     <div className="col-4 df_jcsb">
                                         {/* <button className="btn_Black col-2"></button> */}
-                                        <a href="#" className="btn_Black col-2 center" >Как проехать</a>
+                                        <a 
+                                        href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/data=!4m2!3m1!1s0x4696310fca145cc1:0x42b32648d8238007?sa=X&ved=2ahUKEwi10uanhpLqAhWy6KYKHR-LBVEQ8gEwAHoECAsQAQ" 
+                                        className="btn_Black col-2 center" >Как проехать</a>
                                         <button className="btn_Black col-2">Обратная связь</button>
 
                                     </div>
@@ -48,7 +48,7 @@ class Three extends React.Component {
 
                                 <gallery className="df col-5 ">
 
-                                    <img className="indexGalleryMidLine" src={require('../Styles/img/midLine.png')} />
+                                    <img className="indexGalleryMidLine" src={require('../Styles/img/midLine.png')} alt='separadtion line' />
 
                                     <div className="col-4 df_col df_jcsb ">
 

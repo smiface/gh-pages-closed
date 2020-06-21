@@ -2,8 +2,9 @@ import React from 'react';
 import './App.css'
 import Context from './Components/Context'
 import { data } from './Data'
-import { Link, HashRouter, Route} from 'react-router-dom'
+import {  HashRouter, Route } from 'react-router-dom'
 
+import Header from './Components/Header/Header'
 import Index from './Components/Index/Index'
 import Footer from './Components/Footer'
 import Price from './Components/Price/Price'
@@ -15,18 +16,14 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      // basket: []
+      darkmode: true
     }
+
+    this.changeDarkMode = this.changeDarkMode.bind(this)
   }
 
-  ComponentRoute(comp) {
-    return (
-      <Context.Provider value={{
-        data: data
-      }}>
-        <comp />
-      </Context.Provider>
-    )
+  changeDarkMode(){
+    this.setState({darkmode: !this.state.darkmode}, ()=> console.log(this.state.darkmode))
   }
 
   render() {
@@ -34,34 +31,16 @@ class App extends React.Component {
       <HashRouter >
         <Context.Provider value={{
           data: data,
-          // basket: this.state.basket
-          // basket: Context.data.basket
+          darkmode: this.state.darkmode
         }}>
 
-
-          <header className="">
-            <div className="col-12 df_jcsb">
-
-              <nav className="df_jcsb col-7  ">
-                <Link className="" to="/">Магазин</Link>
-                <Link className="" to="/index">Информация</Link>
-                <Link className="" to="/price">Прайс-лист</Link>
-                <Link className="" to="/news">Новости</Link>
-                {/* <Link className="" to="/users">Контакты</Link> */}
-              </nav>
-
-              <button>
-                <img src={require('./svg/login.svg')} />
-                <div>Вход</div>
-              </button>
-            </div>
-          </header>
+          <Header changeDarkMode={this.changeDarkMode} />
 
           <Route exact path='/index' component={Index} />
           <Route exact path='/price' component={Price} />
           <Route exact path='/news' component={News} />
           <Route exact path='/' component={Shop} />
-          <Route  path='/item/:id?' component={Item} />
+          <Route path='/item/:id?' component={Item} />
 
 
           <Footer />
@@ -72,5 +51,3 @@ class App extends React.Component {
 
 }
 export default App;
-
-

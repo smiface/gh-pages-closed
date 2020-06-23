@@ -250,8 +250,8 @@ class Roulette extends React.Component {
 
                 // рандомим число
                 // #win
-                const a = getNumber(1, 37)
-                // let a = 37
+                // const a = getNumber(0, 37)
+                let a = 37
 
                 // крутим колесо на значение a
                 switch (a) {
@@ -534,7 +534,7 @@ class Roulette extends React.Component {
                                             <button className="bet_size">250</button>
                                             <button className="bet_size">500</button>
                                             <button className="bet_size">1000</button>
-                                            <button className="bet_size">2500</button>
+                                            <button className="bet_size">10000</button>
                                         </div>
                                         <div className="balance df_jcsb center">
                                             <div >Ваш баланс : </div>

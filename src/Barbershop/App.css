@@ -1,5 +1,3 @@
-/* @import "/styles/Index.css"; */
-
 /* * {
   margin: 0;
   padding: 0;
@@ -8,23 +6,19 @@
 body {
   margin: 0;
   padding: 0;
-}
+} 
 
 main {
   background-image: url('./Components/Styles/Layer.png');
   /* background-image: url('./Barbershop//Components/Styles/bg-light3.png'); */
   background-color: #000;
   background-repeat: no-repeat;
-  /* background-position: center; */
-  /* background-size: contain; */
-  /* border: 0.1px #000 solid; */
 }
 
 main * {
   color: #fff;
   /* border: 1px red solid; */
 }
-
 
 @font-face {
   font-family: "PTSansBold";
@@ -76,11 +70,6 @@ main * {
   margin: 0 auto;
 }
 
-.widthPC {
-  width: 1170px;
-  margin: 0 auto;
-}
-
 .ai_center {
   align-items: center;
 }
@@ -112,7 +101,6 @@ main * {
 .grid {
   display: grid;
 }
-
 
 .center {
   display: flex;
@@ -156,8 +144,10 @@ header * {
 /*  */
 
 header {
-  background-color: #fff;
   height: 72px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "PTSansBold";
 }
 
 .header__dark {
@@ -167,17 +157,8 @@ header {
 
 .header__light * {
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: unset;
   color: #000;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-family: "PTSansBold";
-  border: none;
 }
-
-
 
 header button {
   height: 100%;
@@ -198,7 +179,6 @@ header button img {
 
 .indexRhomb {
   width: 30px;
-
 }
 
 .content .btn_Black {
@@ -223,10 +203,6 @@ header button img {
 
 .index-component {
   padding-bottom: 50px;
-}
-
-.index-component .content .df_col {
-  /* justify-content: space-around; */
 }
 
 .index-component .content {
@@ -265,14 +241,14 @@ header button img {
 }
 
 footer {
-  height: 200px;
+  padding: 50px 0;
   display: flex;
   align-items: center;
   background-image: url(./Components/Styles/FooterBg.png);
 }
 
 footer * {
-  color: #fff
+  color: #fff;
 }
 
 
@@ -289,7 +265,10 @@ footer .btn_Black {
 footer .btn_nav {
   width: 40px;
 }
-
+footer  p {
+  padding: 10px;
+  text-align: center;
+}
 main * {
   font-family: "PTSansBold";
 }
@@ -300,9 +279,6 @@ main * {
   padding-top: 50px;
 }
 
-.index-info {
-  /* padding: 50px 0; */
-}
 
 .romb {
   background-color: #000000;
@@ -346,7 +322,9 @@ main * {
   justify-content: unset;
 }
 
-
+nav a {
+  text-decoration: none;
+}
 
 .news_component .content {
   height: unset;
@@ -374,7 +352,6 @@ main * {
   border-top: 1px grey solid
 }
 
-
 .relative {
   position: relative;
 }
@@ -383,7 +360,9 @@ main * {
   height: unset;
   padding: 50px 0;
 }
-
+.shop-component h3 {
+  margin: 0
+}
 .shop-component nav:nth-child(1) {
   padding-bottom: 50px;
 }
@@ -608,7 +587,6 @@ main * {
   margin: 5px 0;
   color: #fff;
   text-align: left
-  /* padding: 5px 0; */
 }
 
 .news_item input::placeholder {

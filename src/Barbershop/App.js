@@ -11,6 +11,7 @@ import Price from './Components/Price/Price'
 import News from './Components/News/News'
 import Shop from './Components/Shop/Shop'
 import Item from './Components/Item/Item'
+import Roulette from '../Roulette/Roulette'
 
 class App extends React.Component {
   constructor(props) {
@@ -41,6 +42,7 @@ class App extends React.Component {
           <Route exact path='/news' component={News} />
           <Route exact path='/' component={Shop} />
           <Route path='/item/:id?' component={Item} />
+          <Route path='/roulette' component={Roulette} />
 
 
           <Footer />

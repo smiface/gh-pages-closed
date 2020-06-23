@@ -21,9 +21,9 @@ class Header extends React.Component {
 
                             <nav className="df_jcsb col-7  ">
                                 <Link className="" to="/">Магазин</Link>
+                                <Link className="" to="/news">Новости</Link>
                                 <Link className="" to="/index">Информация</Link>
                                 <Link className="" to="/price">Прайс-лист</Link>
-                                <Link className="" to="/news">Новости</Link>
                             </nav>
 
                             <button onClick={() => {

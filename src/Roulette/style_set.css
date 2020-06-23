@@ -1,0 +1,83 @@
+.border {
+    border: 1px red solid;
+  }
+  
+  .col-1 {
+    width: 60px;
+  }
+  
+  .col-2 {
+    width: 144px;
+  }
+  
+  .col-3 {
+    width: 225px;
+  }
+  
+  .col-4 {
+    width: 312px;
+  }
+  
+  .col-5 {
+    width: 379px;
+  }
+  
+  .col-6 {
+    width: 460px;
+  }
+  
+  .col-7 {
+    width: 540px;
+  }
+  
+  .col-8 {
+    width: 641px;
+  }
+  
+  .col-10 {
+    width: 808px;
+  }
+  
+  .col-12 {
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  .ai_center {
+    align-items: center;
+  }
+  
+  .jc_center {
+    justify-content: center;
+  }
+  
+  .df {
+    display: flex;
+  }
+  
+  .df_jcsa {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .df_jcsb {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .df_col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }

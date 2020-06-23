@@ -593,3 +593,15 @@ nav a {
   color: #fff;
   text-indent: 15px;
 }
+
+.footer_another_dark {
+  background-color: #000;
+}
+
+.footer_another_light  {
+  background-color: #fff;
+}
+
+.footer_another_light a {
+  color: #000;
+}

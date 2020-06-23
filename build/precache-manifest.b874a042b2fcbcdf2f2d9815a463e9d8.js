@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49dac9a0c886b8b8535cd23afe790c4b",
+    "revision": "3ad2d92be85cb874249c62b3069feaa7",
     "url": "/gh-pages/index.html"
   },
   {
-    "revision": "df5c1c26853fb775f0e7",
-    "url": "/gh-pages/static/css/main.c94ab4f9.chunk.css"
+    "revision": "741556a49f0c720a1058",
+    "url": "/gh-pages/static/css/main.ba729d8c.chunk.css"
   },
   {
-    "revision": "290b189a3b292c9e6171",
-    "url": "/gh-pages/static/js/2.1b456d71.chunk.js"
+    "revision": "6a6b3ce2b605a8172e5f",
+    "url": "/gh-pages/static/js/2.12e59352.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/gh-pages/static/js/2.1b456d71.chunk.js.LICENSE.txt"
+    "url": "/gh-pages/static/js/2.12e59352.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "df5c1c26853fb775f0e7",
-    "url": "/gh-pages/static/js/main.8fbed75a.chunk.js"
+    "revision": "741556a49f0c720a1058",
+    "url": "/gh-pages/static/js/main.537e7866.chunk.js"
   },
   {
     "revision": "2a1184acfdf3ce991eaa",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "709bc3c807e9f1976e9c29deb440d47e",
     "url": "/gh-pages/static/media/PTSansBold.709bc3c8.ttf"
+  },
+  {
+    "revision": "9e7f96f385e5aee4ed4c4d1090109f6e",
+    "url": "/gh-pages/static/media/Roulette.9e7f96f3.png"
   },
   {
     "revision": "673f230502546ac4d82f5f533751b54f",
@@ -134,5 +138,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3321b0e0a4a7302444e6f0dfff0cb6ba",
     "url": "/gh-pages/static/media/login.3321b0e0.svg"
+  },
+  {
+    "revision": "2e15a195b53fc6c002426b8b6ecb289f",
+    "url": "/gh-pages/static/media/roflan.2e15a195.jpg"
   }
 ]);

@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/gh-pages/static/css/main.c94ab4f9.chunk.css",
-    "main.js": "/gh-pages/static/js/main.8fbed75a.chunk.js",
-    "main.js.map": "/gh-pages/static/js/main.8fbed75a.chunk.js.map",
+    "main.css": "/gh-pages/static/css/main.ba729d8c.chunk.css",
+    "main.js": "/gh-pages/static/js/main.537e7866.chunk.js",
+    "main.js.map": "/gh-pages/static/js/main.537e7866.chunk.js.map",
     "runtime-main.js": "/gh-pages/static/js/runtime-main.5f5458f6.js",
     "runtime-main.js.map": "/gh-pages/static/js/runtime-main.5f5458f6.js.map",
-    "static/js/2.1b456d71.chunk.js": "/gh-pages/static/js/2.1b456d71.chunk.js",
-    "static/js/2.1b456d71.chunk.js.map": "/gh-pages/static/js/2.1b456d71.chunk.js.map",
+    "static/js/2.12e59352.chunk.js": "/gh-pages/static/js/2.12e59352.chunk.js",
+    "static/js/2.12e59352.chunk.js.map": "/gh-pages/static/js/2.12e59352.chunk.js.map",
     "index.html": "/gh-pages/index.html",
-    "precache-manifest.cc2d0b468cee51387434ed860459291c.js": "/gh-pages/precache-manifest.cc2d0b468cee51387434ed860459291c.js",
+    "precache-manifest.b874a042b2fcbcdf2f2d9815a463e9d8.js": "/gh-pages/precache-manifest.b874a042b2fcbcdf2f2d9815a463e9d8.js",
     "service-worker.js": "/gh-pages/service-worker.js",
-    "static/css/main.c94ab4f9.chunk.css.map": "/gh-pages/static/css/main.c94ab4f9.chunk.css.map",
-    "static/js/2.1b456d71.chunk.js.LICENSE.txt": "/gh-pages/static/js/2.1b456d71.chunk.js.LICENSE.txt",
+    "static/css/main.ba729d8c.chunk.css.map": "/gh-pages/static/css/main.ba729d8c.chunk.css.map",
+    "static/js/2.12e59352.chunk.js.LICENSE.txt": "/gh-pages/static/js/2.12e59352.chunk.js.LICENSE.txt",
     "static/media/App.css": "/gh-pages/static/media/content-bg.673f2305.png",
+    "static/media/Roulette.png": "/gh-pages/static/media/Roulette.9e7f96f3.png",
     "static/media/gallery1.png": "/gh-pages/static/media/gallery1.481a071d.png",
     "static/media/gallery2.png": "/gh-pages/static/media/gallery2.8d4065e7.png",
     "static/media/gallery3.png": "/gh-pages/static/media/gallery3.db91d713.png",
@@ -36,12 +37,13 @@
     "static/media/item6.png": "/gh-pages/static/media/item6.ec52d638.png",
     "static/media/item6_2.png": "/gh-pages/static/media/item6_2.38f525fa.png",
     "static/media/item6_3.png": "/gh-pages/static/media/item6_3.705ab347.png",
-    "static/media/login.svg": "/gh-pages/static/media/login.3321b0e0.svg"
+    "static/media/login.svg": "/gh-pages/static/media/login.3321b0e0.svg",
+    "static/media/roflan.jpg": "/gh-pages/static/media/roflan.2e15a195.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.5f5458f6.js",
-    "static/js/2.1b456d71.chunk.js",
-    "static/css/main.c94ab4f9.chunk.css",
-    "static/js/main.8fbed75a.chunk.js"
+    "static/js/2.12e59352.chunk.js",
+    "static/css/main.ba729d8c.chunk.css",
+    "static/js/main.537e7866.chunk.js"
   ]
 }

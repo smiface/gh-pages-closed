@@ -1,5 +1,6 @@
 import React from 'react'
 import Context from '../Context'
+import './Styles/News.css'
 
 class News extends React.Component {
     constructor(props) {
@@ -16,9 +17,9 @@ class News extends React.Component {
                     (Context) => {
 
                         return (
-
-                            <main className="news_component">
-                                <div className="col-12 ">
+                            // main_dark"
+                            <main className={Context.darkmode ? 'news_component main_dark' : 'news_component main_light'}>
+                                <div className="col-12">
                                     <div className='col-6 df_jcsb'>
                                         {/* кнопка редактировать новости */}
                                         <button className="btn_Black col-2" onClick={() => {
@@ -121,7 +122,7 @@ class News extends React.Component {
                                                             <p className="col-1 news_item_text">{item.date}</p>
                                                             <h3>{item.title}</h3>
                                                             <p className="col-10 news_item_text">{item.text}</p>
-                                                            <p>id : {item.id}</p>
+                                                            {/* <p>id : {item.id}</p> */}
                                                         </div>
                                                     }
 
@@ -131,8 +132,6 @@ class News extends React.Component {
                                     })}
 
                                 </div>
-
-
 
                             </main>
 

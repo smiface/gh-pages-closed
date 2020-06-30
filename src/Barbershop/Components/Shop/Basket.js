@@ -16,12 +16,12 @@ class Basket extends React.Component {
                 {(Context) => {
                     return (
 
-                        <div className="col-12">
+                        <div className="flip basket">
                             {this.props.basket.map(item => {
                                 return (
 
-                                    <div className="df_jcsb ai_center basket_item">
-                                        <img src={require('../Styles/img/item' + item.id + '.png')} className='col-2' alt='item_photo'/>
+                                    <div className="df_jcsb ai_center basket_item flip">
+                                        <img src={require('../Item/Styles/item' + item.id + '.png')} className='col-2' alt='item_photo'/>
                                         <p>{item.title}</p>
 
                                         <div className='df_jcsb col-3 basket_sum'>

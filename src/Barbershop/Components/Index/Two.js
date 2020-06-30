@@ -43,7 +43,7 @@ class Two extends React.Component {
                             <div className="df_jcsb content col-12">
 
                                 {/* новости */}
-                                <news className="col-5 df_col indexNews df_jcsb  ">
+                                <div className="col-5 df_col df_jcsb news df_jcsb  ">
                                     <h3>НОВОСТИ</h3>
                                     <div >
                                         <div>
@@ -63,24 +63,24 @@ class Two extends React.Component {
 
 
 
-                                    <Link className="color_white btn_Black col-2" to="/news">
+                                    <Link className="color_white  col-2" to="/news">
                                         <button className="btn_Black col-2">
                                             Все новости
                                     </button>
                                     </Link>
 
-                                </news>
+                                </div>
 
                                 {/* галлерея */}
 
                                 <div className="df col-5 ">
 
-                                    <img className="indexGalleryMidLine" src={require('../Styles/img/midLine.png')} alt='separate line'/>
+                                    <img className="indexGalleryMidLine" src={require('./Styles/midLine.png')} alt='separate line'/>
 
-                                    <div className="col-4 df_col df_jcsa">
+                                    <div className="col-4 df_col df_jcsb df_jcsa">
 
                                         <h3>Галлерея</h3>
-                                        <img src={require('../Styles/img/gallery' + this.state.galleryIndex + '.png')}  alt='separate line'/>
+                                        <img src={require('./Styles/gallery' + this.state.galleryIndex + '.png')}  alt='separate line'/>
 
                                         <div className="col-4 df_jcsb">
                                             <button className="btn_Black col-2" onClick={() => this.galleryIndexPrev()} >Назад</button>

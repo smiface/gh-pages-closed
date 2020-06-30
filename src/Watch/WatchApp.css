@@ -1,0 +1,5 @@
+.watchApp_dark .container {
+    background-color: #f0eeee;
+}.watchApp_light.container {
+    background-color: pink;
+}

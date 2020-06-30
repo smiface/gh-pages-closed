@@ -1,5 +1,6 @@
 import React from 'react'
 import Context from '../Context'
+import './Styles/Item.css'
 
 class Item extends React.Component {
     
@@ -11,35 +12,35 @@ class Item extends React.Component {
                         const id = this.props.match.params.id - 1;
 
                         return (
-                            <main className="Item-component content df ">
+                            <main className={Context.darkmode ? "Item-component  df main_dark " : "Item-component  df main_light"}>
                                 <div className="col-12 df_jcsa ">
-                                    <div className="shop-item df_col col-6 ">
+                                    <div className="shop-item df_col col-6  ">
 
                                         <div className="df_col col-6">
 
-                                            <div className="df_col slider">
+                                            <div className="df_col slider df_jcsb">
                                                 {/* основная картинка */}
-                                                <img className="slider__main__img" src={require('../Styles/img/item' + (id + 1) + '.png')} alt='item_image_1' />
+                                                <img className="slider__main__img" src={require('./Styles/item' + (id + 1) + '.png')} alt='item_image_1' />
 
                                                 <div className="df_jcsb ">
 
 
-                                                    <img className="slider__secondary__img" src={require('../Styles/img/item' + (id + 1) + '.png')}  alt='item_image_1'
+                                                    <img className="slider__secondary__img" src={require('./Styles/item' + (id + 1) + '.png')}  alt='item_image_1'
                                                         onClick={
-                                                            () => document.querySelector('.slider__main__img').src = require('../Styles/img/item' + (id + 1) + '.png')
+                                                            () => document.querySelector('.slider__main__img').src = require('./Styles/item' + (id + 1) + '.png')
                                                         }
                                                     />
 
 
-                                                    <img className="slider__secondary__img" src={require('../Styles/img/item' + (id + 1) + '_2.png')} alt='item_image_2'
+                                                    <img className="slider__secondary__img" src={require('./Styles/item' + (id + 1) + '_2.png')} alt='item_image_2'
                                                         onClick={
-                                                            () => document.querySelector('.slider__main__img').src = require('../Styles/img/item' + (id + 1) + '_2.png')
+                                                            () => document.querySelector('.slider__main__img').src = require('./Styles/item' + (id + 1) + '_2.png')
                                                         } />
 
 
-                                                    <img className="slider__secondary__img" src={require('../Styles/img/item' + (id + 1) + '_3.png')} alt='item_image_3'
+                                                    <img className="slider__secondary__img" src={require('./Styles/item' + (id + 1) + '_3.png')} alt='item_image_3'
                                                         onClick={
-                                                            () => document.querySelector('.slider__main__img').src = require('../Styles/img/item' + (id + 1) + '_3.png')
+                                                            () => document.querySelector('.slider__main__img').src = require('./Styles/item' + (id + 1) + '_3.png')
                                                         } />
 
 

@@ -1,5 +1,7 @@
 import React from 'react'
 import Context from '../Context'
+import './Styles/Index.css'
+
 import One from './One'
 import Two from './Two'
 import Three from './Three'
@@ -12,7 +14,7 @@ class Index extends React.Component {
         {
           (Context) => {
             return (
-              <main className="index-component">
+              <main className={Context.darkmode ? "main_dark index-component" : "main_light index-component"}>
                 <One />
                 <Two />
                 <Three />

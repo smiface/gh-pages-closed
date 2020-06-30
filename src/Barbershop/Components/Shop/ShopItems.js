@@ -25,7 +25,7 @@ class ShopItems extends React.Component {
 
                                 {this.state.isBasketShow ? <div> {this.state.basket.map(item =>
                                     <div>
-                                        <img src={require('../Styles/img/item' + item.id + '.png')} alt='item img' />
+                                        <img src={require('../Item/Styles/item' + item.id + '.png')} alt='item img' />
                                         <p>{item.title}</p>
                                         <p>Количество : {item.basketSum + 1}</p>
                                     </div>)} </div> : null}
@@ -35,12 +35,14 @@ class ShopItems extends React.Component {
 
                                 {this.props.finalArr === false ?
 
-                                    Context.data.items.map((item, index) => {
+                                    Context.data.items
+                                    .filter(item => item.id >= 0 && item.id <=6 )
+                                    .map((item, index) => {
                                         return (
 
                                             //карточка каждого товара
                                             <div className="shop-item df_col">
-                                                <img src={require('../Styles/img/item' + item.id + '.png')} alt='item img'/>
+                                                <img src={require('../Item/Styles/item' + item.id + '.png')} alt='item img'/>
                                                 <Link to={'item/' + (item.id)}><p>{item.title}</p></Link>
                                                 <div className="df_jcsa ai_center">
                                                     <p>{item.price} ₽</p>
@@ -56,14 +58,14 @@ class ShopItems extends React.Component {
                                     this.props.finalArr === 0 ?
                                         <div> all items </div> :
                                         this.props.finalArr.length === 0 ?
-                                            <p className="col-8"> Товаров по данному фильтру не найдено</p> :
+                                            <p className="col-8 no_items"> Товаров по данному фильтру не найдено</p> :
 
                                             this.props.finalArr.map((item, index) => {
                                                 return (
 
                                                     //карточка каждого товара
                                                     <div className="shop-item df_col">
-                                                        <img src={require('../Styles/img/item' + item.id + '.png')} alt='item img'/>
+                                                        <img src={require('../Item/Styles/item' + item.id + '.png')} alt='item img'/>
                                                         <Link to={'item/' + (item.id)}><p>{item.title}</p></Link>
 
                                                         <div className="df_jcsa ai_center">

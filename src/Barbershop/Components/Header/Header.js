@@ -1,6 +1,7 @@
 import React from 'react'
 import Context from '../Context'
 import { Link } from 'react-router-dom'
+import './Styles/Header.css'
 
 class Header extends React.Component {
     constructor(props) {
@@ -15,37 +16,85 @@ class Header extends React.Component {
             <Context.Consumer>{(Context) => {
                 return (
 
-                    <header className={Context.darkmode ? "header__dark" : "header__light"}>
+                    // с широкоэкранного устройства?
+                    (window.innerWidth > 1366) ?
 
-                        <div className="col-12 df_jcsb">
+                        // да
+                        <header className={Context.darkmode ? "header__dark" : "header__light"}>
 
-                            <nav className="df_jcsb col-7  ">
-                                <Link className="" to="/">Магазин</Link>
-                                <Link className="" to="/news">Новости</Link>
-                                <Link className="" to="/index">Информация</Link>
-                                <Link className="" to="/price">Прайс-лист</Link>
-                            </nav>
+                            <div className="col-12 df_jcsb">
 
-                            <button onClick={() => {
-                                this.setState({ darkmode: !this.state.darkmode })
-                                this.props.changeDarkMode()
-                            }}>
-                                {Context.darkmode ? 'dark mode' : 'light mode'}
-                            </button>
+                                <nav className="df_jcsb col-7  ">
+                                    <Link className="" to="/">Магазин</Link>
+                                    <Link className="" to="/news">Новости</Link>
+                                    <Link className="" to="/index">Информация</Link>
+                                    <Link className="" to="/price">Прайс-лист</Link>
+                                    <Link className="" to="/roulette">Рулетка</Link>
+                                </nav>
 
-                            <button>
-                                <img src={require('../svg/login.svg')} alt='auth_image' />
-                                <div>Вход</div>
-                            </button>
+                                <button onClick={() => {
+                                    this.setState({ darkmode: !this.state.darkmode })
+                                    this.props.changeDarkMode()
+                                }}>
+                                    {Context.darkmode ? 'dark mode' : 'light mode'}
+                                </button>
+
+                                {/* <button>
+                                    <img src={require('../svg/login.svg')} alt='auth_image' />
+                                    <div>Вход</div>
+                                </button> */}
 
 
-                        </div>
-                    </header>
+
+
+                            </div>
+
+
+
+                        </header>
+
+
+                        :
+
+                        // нет
+                        <header className={Context.darkmode ? "header__dark" : "header__light"}>
+                            <button onClick={() => this.setState({ showBar: !this.state.showBar })} className='df_col'>Show menu</button>
+
+                            {this.state.showBar ?
+
+
+                                <div className='df_col'>
+                                    <Link className="" to="/"><button onClick={() => this.setState({ showBar: !this.state.showBar })} >Магазин</button></Link>
+                                    <Link className="" to="/news"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Новости</button></Link>
+                                    <Link className="" to="/index"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Информация</button></Link>
+                                    <Link className="" to="/price"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Прайс-лист</button></Link>
+                                    <Link className="" to="/roulette"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Рулетка</button></Link>
+
+                                    <button onClick={() => {
+                                        this.setState({ darkmode: !this.state.darkmode })
+                                        this.props.changeDarkMode()
+                                    }}>
+                                        {Context.darkmode ? 'dark mode' : 'light mode'}
+                                    </button>
+
+                                    {/* <button onClick={() => this.setState({ showBar: !this.state.showBar })} >
+                                        <img src={require('../svg/login.svg')} alt='auth_image' />
+                                        <div>Вход</div>
+                                    </button> */}
+
+                                </div>
+                                : null
+                            }
+
+                        </header>
 
                 )
-            }}</Context.Consumer>
+            }}
+            </Context.Consumer>
         )
     }
 
 }
 export default Header;
+
+

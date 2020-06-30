@@ -2,7 +2,6 @@ import React from 'react'
 import Context from '../Barbershop/Components/Context'
 import './style.css'
 import roulette from './Roulette.png'
-import roflan from './roflan.jpg'
 
 class Roulette extends React.Component {
     constructor(props) {
@@ -246,12 +245,11 @@ class Roulette extends React.Component {
                 //делаем кнопку неактивной
                 document.querySelector(".roll").disabled = true;
 
-
-
                 // рандомим число
                 // #win
-                // const a = getNumber(0, 37)
-                let a = 37
+                const a = getNumber(0, 37)
+                console.log(a)
+                // let a = 8
 
                 // крутим колесо на значение a
                 switch (a) {
@@ -414,7 +412,7 @@ class Roulette extends React.Component {
                 //делаем кнопку активной
                 setTimeout(() => {
                     document.querySelector(".roll").disabled = false;
-
+                    console.log(a)
                     // показать баланс
                     document.querySelector('.balance_number').innerHTML = balance
 
@@ -432,184 +430,163 @@ class Roulette extends React.Component {
             <Context.Consumer>
                 {(Context) => {
                     return (
+                        // <div className={(Context.darkmode ? "roulette_dark" : "roulette_light")}>
                         <div className={(Context.darkmode ? "roulette_dark" : "roulette_light")}>
-                            <div className={"roulette_main"}>
-                                <div></div>
-                                <div className="df_col left">
+                            <span className={"roulette_main"}>
+
+                                <div className="df_col roulette_item">
                                     <button type="button" className="roll">Roll</button>
-                                    <img className='arrow' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Arrow-down.svg/1200px-Arrow-down.svg.png' />
+                                    <img className='arrow' src={require('./Arrow.png')} />
                                     <img className='roulette' src={roulette} />
+                                    <div className="balance df_jcsb center">
+                                        <div >BALANCE⠀:⠀</div>
+                                        <div className="balance_number"></div>
+                                    </div>
                                 </div>
 
-                                <div className="bets df">
-                                    <div>
-                                        <div className="df bets_number_zero">
-                                            <div className='bet_number bet_number_zero'>0</div>
-                                            <div className='bet_number bet_number_zero'>37</div>
-                                        </div>
-                                        <div className="bets_line1 df_jcsb ">
-                                            <div className="bets_numbers ">
-                                                <div className="df_col">
-                                                    <button className='bet_number black'>1</button>
-                                                    <button className='bet_number red'>2</button>
-                                                    <button className='bet_number black'>3</button>
-                                                </div>
-                                                <div className="df_col">
-                                                    <button className='bet_number red'>4</button>
-                                                    <button className='bet_number black'>5</button>
-                                                    <button className='bet_number red'>6</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number black'>7</button>
-                                                    <button className='bet_number red'> 8</button >
-                                                    <button className='bet_number black'>9</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number red'>10</button>
-                                                    <button className='bet_number black'>11</button>
-                                                    <button className='bet_number red'>12</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number black'>13</button>
-                                                    <button className='bet_number red'>14</button>
-                                                    <button className='bet_number black'>15</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number red'>16</button>
-                                                    <button className='bet_number black'>17</button>
-                                                    <button className='bet_number red'>18</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number black'>19</button>
-                                                    <button className='bet_number red'>20</button>
-                                                    <button className='bet_number black'>21</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number red'>22</button>
-                                                    <button className='bet_number black'>23</button>
-                                                    <button className='bet_number red'>24</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number black'>25</button>
-                                                    <button className='bet_number red'>26</button>
-                                                    <button className='bet_number black'>27</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number red'>28</button>
-                                                    <button className='bet_number black'>29</button>
-                                                    <button className='bet_number red'>30</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number black'>31</button>
-                                                    <button className='bet_number red'>32</button>
-                                                    <button className='bet_number black'>33</button>
-                                                </div >
-                                                <div className="df_col">
-                                                    <button className='bet_number red'>34</button>
-                                                    <button className='bet_number black'>35</button>
-                                                    <button className='bet_number red'>36</button>
-                                                </div >
+                                {/* #2 */}
+                                <div className='tables'>
+                                    <div className='zeros'>
+                                        <button className='zero'>0</button>
+                                        <button className='zero'>37</button>
+                                    </div>
 
-
-                                            </div >
-                                            {/* < !--ряды --> */}
-
+                                    <div className='bets_numbers_both' >
+                                        <div className='bets_numbers'>
+                                            <button className='bet_number red'>1</button>
+                                            <button className='bet_number red'>2</button>
+                                            <button className='bet_number red'>3</button>
+                                            <button className='bet_number red'>4</button>
+                                            <button className='bet_number red'>5</button>
+                                            <button className='bet_number black'>6</button>
+                                            <button className='bet_number red'>7</button>
+                                            <button className='bet_number black'>8</button>
+                                            <button className='bet_number red'>9</button>
+                                            <button className='bet_number black'>10</button>
+                                            <button className='bet_number black'>11</button>
+                                            <button className='bet_number red'>12</button>
+                                            <button className='bet_number black'>13</button>
+                                            <button className='bet_number red'>14</button>
+                                            <button className='bet_number red'>15</button>
+                                            <button className='bet_number red'>16</button>
+                                            <button className='bet_number red'>17</button>
+                                            <button className='bet_number red'>18</button>
                                         </div >
-                                        {/* < !--трети --> */}
-                                        <div className='bets_thirds'>
-                                            <button className="bet_third">1nd 12</button>
-                                            <button className="bet_third">2nd 12</button>
-                                            <button className="bet_third">3nd 12</button>
+                                        <div className='bets_numbers'>
+                                            <button className='bet_number black'>19</button>
+                                            <button className='bet_number black'>20</button>
+                                            <button className='bet_number black'>21</button>
+                                            <button className='bet_number black'>22</button>
+                                            <button className='bet_number black'>23</button>
+                                            <button className='bet_number black'>24</button>
+                                            <button className='bet_number black'>25</button>
+                                            <button className='bet_number black'>26</button>
+                                            <button className='bet_number red'>27</button>
+                                            <button className='bet_number black'>28</button>
+                                            <button className='bet_number black'>29</button>
+                                            <button className='bet_number red'>30</button>
+                                            <button className='bet_number black'>31</button>
+                                            <button className='bet_number red'>32</button>
+                                            <button className='bet_number black'>33</button>
+                                            <button className='bet_number black'>34</button>
+                                            <button className='bet_number black'>35</button>
+                                            <button className='bet_number red'>36</button>
                                         </div>
-                                        {/* <!--другие ставки-- > */}
-                                        <div className="bets_another">
-                                            <button className="bet_half">1-18</button>
-                                            <button className="bet_parity">Even</button>
-                                            <button className="bet_color red">Red</button>
-                                            <button className="bet_color">Black</button>
-                                            <button className="bet_parity">Odd</button>
-                                            <button className="bet_half">19-36</button>
-                                        </div>
-                                        <div className="bets_sizes">
-                                            <button className="bet_size">250</button>
-                                            <button className="bet_size">500</button>
-                                            <button className="bet_size">1000</button>
-                                            <button className="bet_size">10000</button>
-                                        </div>
-                                        <div className="balance df_jcsb center">
-                                            <div >Ваш баланс : </div>
-                                            <div className="balance_number"></div>
-                                        </div>
-                                    </div >
+                                        <table className='"bets_rows'>
+                                            <tr>
+                                                <td><button className="bets_row" id="x">2 to 1</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button className="bets_row">2 to 1</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button className="bets_row">2 to 1</button></td>
+                                            </tr>
 
-                                    <div className="bets_rows df_col df_jcsa">
-                                        <div className="bets_row">2 to 1</div>
-                                        <div className="bets_row">2 to 1</div>
-                                        <div className="bets_row">2 to 1</div>
+                                        </table>
                                     </div>
 
 
-                                </div >
 
-                                <div className="bets_display  df_col">
+                                    <table className='bets_types'>
+                                        <tr className='bets_thirds'>
+                                            <td colspan="2"><button className="bet_third">1nd 12</button></td>
+                                            <td colspan="2"><button className="bet_third">2nd 12</button></td>
+                                            <td colspan="2"><button className="bet_third">3nd 12</button></td>
+                                        </tr>
 
-                                    <div className="df">
-                                        <p className='deleteBet'>Снять ставки</p>
-                                        <p className="bet">На что ставка : </p>
-                                        <p>Сколько : </p>
-                                    </div>
+                                        <tr className="bets_another">
+                                            <td ><button className="bet_half">1-18</button></td>
+                                            <td><button className="bet_parity">Even</button></td>
+                                            <td><button className="bet_color red">Red</button></td>
+                                            <td><button className="bet_color">Black</button></td>
+                                            <td><button className="bet_parity">Odd</button></td>
+                                            <td><button className="bet_half">19-36</button></td>
+                                        </tr>
+                                    </table>
 
-                                    <div className="df">
-                                        <p> число</p>
-                                        <p className="bet_number_display"> нет </p>
-                                        <p className="bet_number_display_sum">0</p>
-                                    </div>
+                                    <table className="bets_sizes">
+                                        <tr>
+                                            <td><button className="bet_size">250</button></td>
+                                            <td><button className="bet_size">500</button></td>
+                                            <td><button className="bet_size">1000</button></td>
+                                            <td><button className="bet_size">2000</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button className="bet_size">4000</button></td>
+                                            <td><button className="bet_size">8000</button></td>
+                                            <td><button className="bet_size">16000</button></td>
+                                            <td> <button className="bet_size">32000</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button className="bet_size">64000</button></td>
+                                            <td><button className="bet_size">128000</button></td>
+                                            <td><button className="bet_size">256000</button></td>
+                                            <td><button className="bet_size">512000</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button className="bet_size">1024000</button></td>
+                                            <td><button className="bet_size">2048000</button></td>
+                                            <td><button className="bet_size">4096000</button></td>
+                                            <td><button className="bet_size">8192000</button></td>
+                                        </tr>
+                                    </table >
 
-                                    <div className="df">
-                                        <p> ряд</p>
-                                        <p className="bet_row_display">нет</p>
-                                        <p className="bet_row_display_sum">0</p>
-                                    </div>
+                                    <table className="bets_display">
+                                        <tr>
+                                            <td><button className='deleteBet'><p>RESET BETS</p></button></td>
+                                            <td><p> NUMBER</p></td>
+                                            <td><p>ROW</p></td>
+                                            <td><p>THIRD</p></td>
+                                            <td><p>HALF</p></td>
+                                            <td><p>COLOR </p></td>
+                                            <td><p>PARITY </p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>На что ставка : </p></td>
+                                            <td><p className="bet_number_display"> нет </p></td>
+                                            <td><p className="bet_row_display">нет</p></td>
+                                            <td><p className="bet_third_display">нет</p></td>
+                                            <td><p className="bet_half_display">нет</p></td>
+                                            <td><p className="bet_color_display">нет</p></td>
+                                            <td><p className="bet_parity_display">нет</p></td>
 
-                                    <div className="df">
-                                        <p>треть</p>
-                                        <p className="bet_third_display">нет</p>
-                                        <p className="bet_third_display_sum">0</p>
-                                    </div>
+                                        </tr>
+                                        <tr>
+                                            <td><p>Сколько : </p></td>
+                                            <td><p className="bet_number_display_sum">0</p></td>
+                                            <td><p className="bet_row_display_sum">0</p></td>
+                                            <td><p className="bet_third_display_sum">0</p></td>
+                                            <td><p className="bet_half_display_sum">0</p></td>
+                                            <td><p className="bet_color_display_sum">0</p></td>
+                                            <td><p className="bet_parity_display_sum">0</p></td>
+                                        </tr>
 
-                                    <div className="df">
-                                        <p>половина</p>
-                                        <p className="bet_half_display">нет</p>
-                                        <p className="bet_half_display_sum">0</p>
-                                    </div>
-
-                                    <div className="df">
-                                        <p>цвет </p>
-                                        <p className="bet_color_display">нет</p>
-                                        <p className="bet_color_display_sum">0</p>
-                                    </div>
-
-                                    <div className="df">
-                                        <p>четность </p>
-                                        <p className="bet_parity_display">нет</p>
-                                        <p className="bet_parity_display_sum">0</p>
-                                    </div>
+                                    </table>
 
                                 </div>
 
-
-                            </div >
-
-                            <div className="ads">
-                                <a href="https://www.donationalerts.com/r/smiface">
-                                    <img className='dep' src={roflan} alt="Пополнить баланс" />
-                                </a>
-                                <a href="https://drgn.gold/go/katana/">
-                                    <img src="https://panels-images.twitch.tv/panel-46396065-image-badce777-8424-45c4-ae53-0f6fdad7f83f" alt="dragonmoney k4t4n4" />
-                                </a>
-                                <a href="https://grand-rp.su/?ref=1436">
-                                    <img src="https://panels-images.twitch.tv/panel-46396065-image-c45529cd-0030-4860-967b-b094d9009825" alt="grand server k4t4n4" /></a>
-                            </div>
+                            </span >
                         </div>
 
 

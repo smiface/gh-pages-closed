@@ -1,6 +1,7 @@
 import React from 'react'
 import Context from '../Context'
 import { Link } from 'react-router-dom'
+import './Styles/Price.css'
 
 class Price extends React.Component {
    
@@ -10,18 +11,18 @@ class Price extends React.Component {
                 {
                     (Context) => {
                         return (
-                            <main>
+                            <main className={Context.darkmode ? 'main_dark content df_col ai_center' : 'main_light content df_col ai_center'}>
                                 <div className="price-component content ai_center">
-                                    <div className="col-11 df_col ">
+                                    <div className="col-11 df_col container">
                                         <h3>Прайс-лист</h3>
                                         <div className="df_jcsa price-nav col-3 ai_center">
                                             <Link to="/">Главная</Link>
-                                            <div className="romb"></div>
+                                            <div className="rhomb"></div>
                                             <p> ПРАЙС-ЛИСТ </p>
                                         </div>
 
                                         <div className="df_jcsa ai_center">
-                                            <div className="line">------------------------------------------</div>
+                                            <div className="line" id="line">------------------------------------------</div>
                                             <h2>ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
                                             <div className="line">------------------------------------------</div>
                                         </div>
@@ -30,7 +31,7 @@ class Price extends React.Component {
 
                                             <div className="df_col col-6">
 
-                                                <h3 className="df_col col-4 mn">
+                                                <h3 className="df_col col-4">
                                                     МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:
                                                 </h3>
 

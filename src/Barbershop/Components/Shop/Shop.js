@@ -4,6 +4,8 @@ import ShopItems from './ShopItems'
 import { Link } from 'react-router-dom'
 import ShopFilter from './ShopFilter'
 import Basket from './Basket'
+import PagesNavigation from './PagesNavigation'
+import './Styles/Shop.css'
 
 class Shop extends React.Component {
     constructor(props) {
@@ -12,7 +14,8 @@ class Shop extends React.Component {
             finalArr: false,
             basket: [],
             isBasketShow: false
-        }
+        };
+        // this.navigatedFilter = this.navigatedFilter.bind(this)
     }
 
     updateBasket = (value) => {
@@ -23,51 +26,53 @@ class Shop extends React.Component {
         this.setState({ finalArr: value })
     }
 
+
     render() {
         return (
+
             <Context.Consumer>
                 {
-                    (Context) => {
 
+                    (Context) => {
                         return (
 
-                            <main className="shop-component content ">
-                                <div className="col-12 df_col">
+                            <main className={Context.darkmode ? 'shop-component  main_dark content' : 'shop-component  main_light content'}>
+                                <div className=" flip df_col">
 
-                                    <nav className=''>
+                                    <nav className='test'>
                                         <h3>Средства для ухода</h3>
 
                                         <div className="df price-nav ai_center">
                                             <Link to="/index">Главная</Link>
-                                            <div className="romb"></div>
+                                            <div className="rhomb"></div>
                                             <Link to="/shop">Магазин</Link>
-                                            <div className="romb"></div>
+                                            <div className="rhomb"></div>
                                             <Link to="/shop">Средства для ухода</Link>
                                         </div>
                                     </nav>
 
-                                    <button className="btn_Black" onClick={
-                                        () => this.setState({ isBasketShow: !this.state.isBasketShow })
-                                    }>Корзина</button> <br />
 
-                                    {this.state.isBasketShow ? <Basket basket={Context.data.basket} updateBasket={this.updateBasket} /> : null}
 
-                                    <div className="df_jcsa col-12 ">
+                                    <div className="df_jcsa  flip">
 
                                         <ShopFilter updateFinalArr={this.updateFinalArr} />
                                         <div className="col-9 df_col filter_group">
 
                                             <ShopItems finalArr={this.state.finalArr} updateBasket={this.updateBasket} />
 
-                                            <nav className="col-3 filter_group df_jcsa shop_nav">
-                                                <button className="btn_Black">1</button>
-                                                <button className="btn_Black">2</button>
-                                                <button className="btn_Black">3</button>
-                                                <button className="btn_Black">4</button>
-                                            </nav>
+                                            <PagesNavigation updateFinalArr={this.updateFinalArr} />
+
+
+
                                         </div>
 
                                     </div>
+
+                                    <button className="btn_Black basket" onClick={
+                                        () => this.setState({ isBasketShow: !this.state.isBasketShow })
+                                    }>Корзина</button> <br />
+
+                                    {this.state.isBasketShow ? <Basket basket={Context.data.basket} updateBasket={this.updateBasket} /> : null}
 
                                 </div>
 

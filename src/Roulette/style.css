@@ -3,80 +3,105 @@
     margin: 0;
 }
 
-/* .roulette_main { */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* background-color: #000; */
-    /* width: 100%; */
-    /* margin: 0 auto; */
-/* } */
-
 .roulette_dark {
     background-color: #000;
+    height: unset;
 }
+
 .roulette_light {
     background-color: green;
 }
 .roulette_main {
     padding: 50px 0;
+    width: 1900px;
     
+    display: flex;
+    margin-left: 0;
+    align-items: flex-start;
 }
 
 .roulette_main * {
-  font-family: "PTSansBold";
+    font-family: "PTSansBold";
+    height: unset;
 }
-/* body {
-    background-color: #000000;
-} */
 
-.roll {
-    height: 50px;
-    background-color: black;
+.bets_row {
+    background-color: #000;
 }
-.balance {
-    line-height: 50px;
-    text-align: center;
+
+/* new */
+.bets_old {
+    display: none;
 }
-.arrow {
-    height: 30px;
-    width: 30px;
+
+.roulette_item {
+    width: 20%;
+}
+.zeros {
+    grid-area: 'zeros';
+    width: 600px;
+}
+.tables {
     margin: 0 auto;
-    background-color: #fff;
 }
-
-.roulette {
-    margin: 5px auto;
-    height: 300px;
-    width: 300px;
-
-    transition: 1s;
-    transform: rotate(360deg);
+.zero {
+    background-color: green;
+    color: black;
+    width: 50%;
 }
-
-
-.bets_numbers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-}
-
-.df_col .bet_number {
+.bet_number {
     height: 50px;
     width: 50px;
 }
 
-.bet_number_zero {
-    background-color: green;
-    width: 50%;
-    height: 30px;
-    text-align: center;
+.bets_numbers_both {
+    grid-area: 'bets_numbers_both';
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px red solid;
+    height: unset;
+    width: 100%;
 }
 
+.bets_numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.bets_rows {
+    grid-area: 'bets_row';
+}
+
+@media (max-width: 1280px) {
+    .roulette_main {
+        width: 700px;
+    }
+}
+
+.roll {
+    background-color: black;
+    height: 50px;
+}
+
+.balance {
+    line-height: 50px;
+    text-align: center;
+    height: unset;
+}
+
+.arrow {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    height: unset;
+    padding-top: 20px;
+}
+.roulette {
+    margin: 5px auto;
+    height: 300px;
+    width: 300px;
+    transition: 1s;
+    transform: rotate(360deg);
+    padding: 20px 0;
+}
 
 .bets_numbers .red,
 .bet_color.red {
@@ -84,7 +109,6 @@
     color: black;
     border: none;
 }
-
 
 /* ряды */
 .bets_rows {
@@ -95,28 +119,13 @@
 
 .bets_row {
     /* padding: 0 15px; */
-    width: 60px;
+    width: 100px;
     height: 50px;
     display: flex;
-    text-align: center;
     justify-content: center;
-    line-height: 10px;
     align-items: center;
-    border: 1px red solid;
+    border-collapse: collapse;
 }
-
-/* трети */
-
-.bets_thirds,
-.bets_another,
-.bets_sizes {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    color: white;
-    height: 50px;
-}
-
 
 .bets_thirds button,
 .bets_another button,
@@ -128,12 +137,6 @@
 
 /* другие */
 
-.bets_another {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: space-around;
-}
-
 * {
     color: white;
 }
@@ -143,95 +146,92 @@
     color: #fff
 }
 
-
 button:active {
-    border: 5px white solid;
+    border: 1px white solid;
 }
 
-/* 
-button:active {
-    border: 5px black solid;
-} */
-
-.bets_numbers div {
-    /* border: 1px red solid; */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bets_display,
+.bets_sizes,
+.bets .bets_thirds,
+.bets_types {
+    margin-top: 20px;
 }
 
-.bets_sizes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    color: white;
-    margin-top: 22px;
+.bets_display button,
+.bets_sizes button,
+.bets .bets_thirds button,
+.bets_display p  {
+    height: 30px;
 }
 
-.bets_sizes_custom {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+
+.roulette_main table {
+    border-collapse: collapse
 }
 
-.bets_display {
-    width: 250px;
-    padding-top: 30px;
-    padding-left: 30px;
-    height: 150px;
-    justify-content: space-between;
-    width: 300px;
-    padding-right: 50px;
-}
-
-.bets_display p {
+{
     border: 1px grey solid;
-    padding: 5px;
+    background-color: black;
+    width: 100%;
 }
-
-.bets_display p {
-    width: 30%;
-}
-
-.bets_display * {
-    color: white;
-}
-
-.bets_display p {
+.bets_display p,
+.deleteBet  {
+    border: none;
+    border: 1px grey solid;
+    /* padding: 5px; */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+.deleteBet:active {
+    border: 3px white solid;
 }
 
-.roulette_main {
-    display: flex;
-    margin: 0 auto;
-    width: 90%;
+.bets_display tr,
+.bets_display p {
+    height: 30px;
 }
 
-.ads {
-    width: 100vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-
+.bets_rows button,
+.bets_sizes button,
+.bets_another button,
+.bets_thirds button,
+.bets_display p  {
+    width: 100%;
+    height: 35px;
 }
 
-.ads img {
-    height: 200px;
-    width: 200px;
-    align-self: center;
+.roulette_main table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
+.balance,
+.roll {
+    border: 2px white solid;
+    border-radius: 10px;
+}
 
-@media (max-width: 1366px) {
+.bets,
+.bets_display,
+.bets_sizes {
+    width: 100%;
+}
+
+@media (max-width: 1800px) {
     .roulette_main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 150px;
+        width: 100%;
     }
+
     .roulette {
-        margin-bottom: 25px;;
+        margin-bottom: 25px;
     }
 }

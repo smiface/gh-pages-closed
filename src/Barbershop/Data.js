@@ -7,55 +7,55 @@ data.news = [
         id:1,
         title: "Это заголовок новости №1",
         date: 11.01,
-        text: "Это текст новости №1."
+        text: "№1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
         id:2,
         title: "Это заголовок новости №2",
         date: 12.01,
-        text: "Это текст новости №2. "
+        text: "№2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
         id:3,
         title: "Это заголовок новости №3",
         date: 13.01,
-        text: "Это текст новости №3. "
+        text: "№3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
         id:4,
         title: "Это заголовок новости №4",
         date: 14.01,
-        text: "Это текст новости №4. "
+        text: "№4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
         id:5,
         title: "Это заголовок новости №5",
         date: 15.01,
-        text: "Это текст новости №5. "
+        text: "№5. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
         id:6,
         title: "Это заголовок новости №6",
         date: 16.01,
-        text: "Это текст новости №6. "
+        text: "№6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
         id:7,
         title: "Это заголовок новости №7",
         date: 17.01,
-        text: "Это текст новости №7. "
+        text: "№7. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
         id:8,
         title: "Это заголовок новости №8",
         date: 18.01,
-        text: "Это текст новости №8. "
+        text: "№8. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
         id:9,
         title: "Это заголовок новости №9",
         date: 19.01,
-        text: "Это текст новости №9. "
+        text: "№9. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     }
 ]
 
@@ -128,6 +128,66 @@ data.items = [
     },
     {
         id: 6,
+        code: 106,
+        price: 3900,
+        title: "Набор для бритья «Baxter of California» ",
+        about: "Это описание",
+        group: data.itemGroup[0],
+        stock: 1,
+        producer: data.producer[0]
+    },
+    {
+        id: 7,
+        code: 106,
+        price: 3900,
+        title: "Набор для бритья «Baxter of California» ",
+        about: "Это описание",
+        group: data.itemGroup[0],
+        stock: 1,
+        producer: data.producer[0]
+    },
+    {
+        id: 8,
+        code: 106,
+        price: 3900,
+        title: "Набор для бритья «Baxter of California» ",
+        about: "Это описание",
+        group: data.itemGroup[0],
+        stock: 1,
+        producer: data.producer[0]
+    },
+    {
+        id: 9,
+        code: 106,
+        price: 3900,
+        title: "Набор для бритья «Baxter of California» ",
+        about: "Это описание",
+        group: data.itemGroup[0],
+        stock: 1,
+        producer: data.producer[0]
+    },
+    {
+        id: 10,
+        code: 106,
+        price: 3900,
+        title: "Набор для бритья «Baxter of California» ",
+        about: "Это описание",
+        group: data.itemGroup[0],
+        stock: 1,
+        producer: data.producer[0]
+    },
+    {
+        id: 11,
+        code: 106,
+        price: 3900,
+        title: "Набор для бритья «Baxter of California» ",
+        about: "Это описание",
+        group: data.itemGroup[0],
+        stock: 1,
+        producer: data.producer[0]
+    },
+    {
+        id: 12,
         code: 106,
         price: 3900,
         title: "Набор для бритья «Baxter of California» ",

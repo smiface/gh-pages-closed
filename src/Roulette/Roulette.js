@@ -454,42 +454,49 @@ class Roulette extends React.Component {
                                     <div className='bets_numbers_both' >
                                         <div className='bets_numbers'>
                                             <button className='bet_number red'>1</button>
-                                            <button className='bet_number red'>2</button>
-                                            <button className='bet_number red'>3</button>
                                             <button className='bet_number red'>4</button>
-                                            <button className='bet_number red'>5</button>
-                                            <button className='bet_number black'>6</button>
                                             <button className='bet_number red'>7</button>
-                                            <button className='bet_number black'>8</button>
-                                            <button className='bet_number red'>9</button>
                                             <button className='bet_number black'>10</button>
-                                            <button className='bet_number black'>11</button>
-                                            <button className='bet_number red'>12</button>
                                             <button className='bet_number black'>13</button>
-                                            <button className='bet_number red'>14</button>
-                                            <button className='bet_number red'>15</button>
                                             <button className='bet_number red'>16</button>
+
+
+                                            <button className='bet_number red'>2</button>
+                                            <button className='bet_number red'>5</button>
+                                            <button className='bet_number black'>8</button>
+                                            <button className='bet_number black'>11</button>
+                                            <button className='bet_number red'>14</button>
                                             <button className='bet_number red'>17</button>
+
+
+                                            <button className='bet_number red'>3</button>
+                                            <button className='bet_number black'>6</button>
+                                            <button className='bet_number red'>9</button>
+                                            <button className='bet_number red'>12</button>
+                                            <button className='bet_number red'>15</button>
                                             <button className='bet_number red'>18</button>
                                         </div >
+
                                         <div className='bets_numbers'>
                                             <button className='bet_number black'>19</button>
-                                            <button className='bet_number black'>20</button>
-                                            <button className='bet_number black'>21</button>
                                             <button className='bet_number black'>22</button>
-                                            <button className='bet_number black'>23</button>
-                                            <button className='bet_number black'>24</button>
                                             <button className='bet_number black'>25</button>
-                                            <button className='bet_number black'>26</button>
-                                            <button className='bet_number red'>27</button>
                                             <button className='bet_number black'>28</button>
-                                            <button className='bet_number black'>29</button>
-                                            <button className='bet_number red'>30</button>
                                             <button className='bet_number black'>31</button>
-                                            <button className='bet_number red'>32</button>
-                                            <button className='bet_number black'>33</button>
                                             <button className='bet_number black'>34</button>
+
+                                            <button className='bet_number black'>20</button>
+                                            <button className='bet_number black'>23</button>
+                                            <button className='bet_number black'>26</button>
+                                            <button className='bet_number black'>29</button>
+                                            <button className='bet_number red'>32</button>
                                             <button className='bet_number black'>35</button>
+
+                                            <button className='bet_number black'>21</button>
+                                            <button className='bet_number black'>24</button>
+                                            <button className='bet_number red'>27</button>
+                                            <button className='bet_number red'>30</button>
+                                            <button className='bet_number black'>33</button>
                                             <button className='bet_number red'>36</button>
                                         </div>
                                         <table className='"bets_rows'>
@@ -532,7 +539,7 @@ class Roulette extends React.Component {
                                             <td><button className="bet_size">1000</button></td>
                                             <td><button className="bet_size">2000</button></td>
                                         </tr>
-                                        <tr>
+                                        {/* <tr>
                                             <td><button className="bet_size">4000</button></td>
                                             <td><button className="bet_size">8000</button></td>
                                             <td><button className="bet_size">16000</button></td>
@@ -549,7 +556,7 @@ class Roulette extends React.Component {
                                             <td><button className="bet_size">2048000</button></td>
                                             <td><button className="bet_size">4096000</button></td>
                                             <td><button className="bet_size">8192000</button></td>
-                                        </tr>
+                                        </tr> */}
                                     </table >
 
                                     <table className="bets_display">

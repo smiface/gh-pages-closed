@@ -7,7 +7,10 @@ import Two from './Two'
 import Three from './Three'
 
 class Index extends React.Component {
-  
+  constructor(props) {
+    super(props)
+}
+
   render() {
     return (
       <Context.Consumer>
@@ -15,6 +18,7 @@ class Index extends React.Component {
           (Context) => {
             return (
               <main className={Context.darkmode ? "main_dark index-component" : "main_light index-component"}>
+                
                 <One />
                 <Two />
                 <Three />

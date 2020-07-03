@@ -56,7 +56,7 @@ class ShopFilter extends React.Component {
                                         return (
                                             <div>
                                                 <input value={index} className="filterGroupInput input" name="radio" type="radio" />
-                                                <label>{item}</label>
+                                                <label onClick={()=>console.log(1)} >{item}</label>
                                             </div>
                                         )
                                     })

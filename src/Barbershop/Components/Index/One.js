@@ -4,6 +4,7 @@ export default function One() {
   return (
     <div className="col-12 .df_col one">
 
+
       <div className="index-logo">
         <img src={require('./Styles/indexLogo.png')} className="index-logo" alt='main logo' />
       </div>

@@ -6,7 +6,8 @@ class News extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            canEditNews: false
+            canEditNews: false,
+            NewsReversed: false
         }
     }
 
@@ -34,6 +35,7 @@ class News extends React.Component {
 
                                         <button className='btn_Black col-2' onClick={() => {
                                             Context.data.news = Context.data.news.reverse()
+                                            this.setState({NewsReversed: !this.state.NewsReversed})
                                             this.forceUpdate()
                                         }}>Reverse</button>
                                     </div>
@@ -68,7 +70,9 @@ class News extends React.Component {
 
                                                 new_News.id = Context.data.news.length + 1
 
-                                                Context.data.news.push(new_News)
+                                                //добавить новость
+                                                this.state.NewsReversed ? Context.data.news.unshift(new_News) : Context.data.news.push(new_News)
+                                                
 
                                                 this.setState({ addNews: !this.state.addNews })
                                             }}>Add</button>

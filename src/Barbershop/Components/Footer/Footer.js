@@ -50,6 +50,7 @@ class Footer extends React.Component {
                                         <button className="btn_Black col-2" > <a href="https://htmlacademy.ru/">HTML Academy </a></button>
                                     </div> */}
 
+                                    <div> Т.к. изначально макет HTML Academy - адрес и ссылки на них</div>
 
                                 </div>
 

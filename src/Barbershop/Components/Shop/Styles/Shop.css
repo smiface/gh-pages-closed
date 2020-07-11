@@ -208,7 +208,7 @@ input[type=checkbox]:checked {
   border: none
 } */
 
-input[type=checkbox] {
+/* input[type=checkbox] {
   border: 1px red solid;
   display: none;
 }
@@ -222,7 +222,7 @@ input[type=checkbox]:checked {
   content: "\2714";
   border: 0.1em solid #000;
   display: inline-block;
-}
+} */
 
 
 

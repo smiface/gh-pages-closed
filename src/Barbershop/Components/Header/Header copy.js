@@ -16,8 +16,10 @@ class Header extends React.Component {
             <Context.Consumer>{(Context) => {
                 return (
 
-                    <div>
+                    // с широкоэкранного устройства?
+                    (window.innerWidth > 1366) ?
 
+                        // да
                         <div className='header_default'>
                             <header className={Context.darkmode ? "header__dark" : "header__light"}>
 
@@ -54,41 +56,44 @@ class Header extends React.Component {
 
                         </div>
 
+                        :
+
+                        // нет
                         <div className='header_burger'>
                             <header className={Context.darkmode ? "header__dark" : "header__light"}>
-                                <button onClick={() => this.setState({ showBar: !this.state.showBar })} className='df_col'>Show menu</button>
+                            <button onClick={() => this.setState({ showBar: !this.state.showBar })} className='df_col'>Show menu</button>
 
-                                {this.state.showBar ?
+                            {this.state.showBar ?
 
 
-                                    <div className='df_col'>
-                                        <Link className="" to="/"><button onClick={() => this.setState({ showBar: !this.state.showBar })} >Магазин</button></Link>
-                                        <Link className="" to="/news"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Новости</button></Link>
-                                        <Link className="" to="/index"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Информация</button></Link>
-                                        <Link className="" to="/price"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Прайс-лист</button></Link>
-                                        <Link className="" to="/roulette"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Рулетка</button></Link>
+                                <div className='df_col'>
+                                    <Link className="" to="/"><button onClick={() => this.setState({ showBar: !this.state.showBar })} >Магазин</button></Link>
+                                    <Link className="" to="/news"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Новости</button></Link>
+                                    <Link className="" to="/index"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Информация</button></Link>
+                                    <Link className="" to="/price"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Прайс-лист</button></Link>
+                                    <Link className="" to="/roulette"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Рулетка</button></Link>
 
-                                        <button onClick={() => {
-                                            this.setState({ darkmode: !this.state.darkmode })
-                                            this.props.changeDarkMode()
-                                        }}>
-                                            {Context.darkmode ? 'dark mode' : 'light mode'}
-                                        </button>
+                                    <button onClick={() => {
+                                        this.setState({ darkmode: !this.state.darkmode })
+                                        this.props.changeDarkMode()
+                                    }}>
+                                        {Context.darkmode ? 'dark mode' : 'light mode'}
+                                    </button>
 
-                                        {/* <button onClick={() => this.setState({ showBar: !this.state.showBar })} >
+                                    {/* <button onClick={() => this.setState({ showBar: !this.state.showBar })} >
                                         <img src={require('../svg/login.svg')} alt='auth_image' />
                                         <div>Вход</div>
                                     </button> */}
 
-                                    </div>
-                                    : null
-                                }
+                                </div>
+                                : null
+                            }
 
-                            </header>
-
+                        </header>
+                        
                         </div>
-
-                    </div>
+                
+                
                 )
             }}
             </Context.Consumer>

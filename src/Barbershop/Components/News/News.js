@@ -93,7 +93,7 @@ class News extends React.Component {
                                                         <div className="df_col col-10 ">
                                                             <input className={"btn_Black col-2  news_input_id_" + item.id + ''} placeholder={item.date} />
                                                             <input className={"btn_Black col-8  news_input_id_" + item.id + ''} placeholder={item.title} />
-                                                            <input className={"btn_Black col-8  news_input_id_" + item.id + ''} placeholder={item.text} />
+                                                            <input className={"btn_Black col-8  news_input_id_" + item.id + ''} id='test' placeholder={item.text} />
                                                             {/* <p>id : {item.id}</p> */}
 
                                                             <div className="col-4 df_jcsb ">

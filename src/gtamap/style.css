@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* справа */
+.info {
+    position: fixed;
+    right: 0;
+    width: 300px;
+}
+
+.homeImg {
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    transition: 1s;
+}
+
+.home_wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.map_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home_about {
+    width: 400px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    position: fixed;
+    font-size: 30px;
+}
+
+.filter {
+    width: 50px;
+    position: fixed;
+    font-size: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: black;
+    color: white;
+    width: 350px;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 15px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.filter p {
+    padding: 25px 0;
+}
+
+.filter input {
+    margin-left: 35px;
+    font-size: 25px;
+    transform: scale(1.9)
+}
+
+.filter label {
+    width: 20px;
+}
+
+.filter div  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filter .filter-gm {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-gm div {
+    width: 100%;
+}
+
+.filter .filter-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter .filter-price * {
+    margin: 20px 0;
+}
+
+.filterPriceMin,
+.filterPriceMax {
+    color: white;
+}
+
+.home_about p {
+    line-height: 25px;
+}

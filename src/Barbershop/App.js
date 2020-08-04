@@ -13,6 +13,7 @@ import News from './Components/News/News'
 import Shop from './Components/Shop/Shop'
 import Item from './Components/Item/Item'
 import Roulette from '../Roulette/Roulette'
+import Gtamap from '../gtamap/Gtamap'
 
 import WatchApp from '../Watch/App'
 
@@ -47,12 +48,12 @@ class App extends React.Component {
           <Route path='/item/:id?' component={Item} />
           <Route path='/roulette' component={Roulette} />
           <Route path='/watchApp' component={WatchApp} />
-
+          <Route path='/gtamap' component={Gtamap} />
 
           <Footer />
 
-          
-            
+
+
         </Context.Provider>
       </HashRouter>
     )

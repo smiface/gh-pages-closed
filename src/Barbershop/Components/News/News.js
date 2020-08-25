@@ -1,6 +1,6 @@
 import React from 'react'
 import Context from '../Context'
-import './Styles/News.css'
+import '../../Styles/Components/News/News.css'
 
 class News extends React.Component {
     constructor(props) {

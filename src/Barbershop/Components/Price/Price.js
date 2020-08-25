@@ -1,7 +1,7 @@
 import React from 'react'
 import Context from '../Context'
 import { Link } from 'react-router-dom'
-import './Styles/Price.css'
+import '../../Styles/Components/Price/Price.css'
 
 class Price extends React.Component {
    

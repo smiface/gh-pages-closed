@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import ShopFilter from './ShopFilter'
 import Basket from './Basket'
 import PagesNavigation from './PagesNavigation'
-import './Styles/Shop.css'
+import '../../Styles/Components/Shop/Shop.css'
 
 class Shop extends React.Component {
     constructor(props) {

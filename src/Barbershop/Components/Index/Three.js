@@ -77,7 +77,7 @@ class Three extends React.Component {
 
                                 <div className="df col-5 ">
 
-                                    <img className="indexGalleryMidLine" src={require('./Styles/midLine.png')} alt='separadtion line' />
+                                    <img className="indexGalleryMidLine" src={require('../../Styles/Components/Index/midLine.png')} alt='separadtion line' />
 
                                     <div className="col-4 df_col df_jcsb form">
 

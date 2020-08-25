@@ -1,6 +1,6 @@
 import React from 'react'
 import Context from '../Context'
-import './Styles/Index.css'
+import '../../Styles/Components/Index/Index.css'
 
 import One from './One'
 import Two from './Two'

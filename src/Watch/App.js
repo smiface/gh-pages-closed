@@ -1,15 +1,11 @@
 import React from 'react';
 import Context from '../Barbershop/Components/Context'
-import Header from './Header'
+import Header from './Header/Header'
 import './WatchApp.css'
 
 class WatchApp extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      basket: [],
-      style: {}
-    }
 
     this.updateStyle = this.updateStyle.bind(this)
   }
@@ -26,6 +22,7 @@ class WatchApp extends React.Component {
                         return (
                             <div  className={Context.darkmode ? 'watchApp_dark' : 'watchApp_light'} >
                               <Header />
+
                             </div>
                         )
                     }

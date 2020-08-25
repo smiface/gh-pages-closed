@@ -1,7 +1,7 @@
 import React from 'react'
 import Context from '../Context';
 import { Link } from 'react-router-dom'
-import './Style/Footer.css'
+import '../../Styles/Components/Footer/Footer.css'
 
 class Footer extends React.Component {
 
@@ -25,20 +25,20 @@ class Footer extends React.Component {
                                             <button className="btn_Black  btn_nav">
 
                                                 <a href="https://vk.com/htmlacademy">
-                                                    <img src={require('./Style/footer_vk.png')} alt='vk_img' />
+                                                    <img src={require('../../Styles/Components/Footer/footer_vk.png')} alt='vk_img' />
                                                 </a>
                                             </button>
 
                                             <button className="btn_Black btn_nav">
                                                 <a href="https://www.facebook.com/htmlacademy/">
-                                                    <img src={require('./Style/footer_fb.png')} alt='fb_img' />
+                                                    <img src={require('../../Styles/Components/Footer/footer_fb.png')} alt='fb_img' />
 
                                                 </a>
                                             </button>
 
                                             <button className="btn_Black btn_nav">
                                                 <a href="https://www.instagram.com/htmlacademy/">
-                                                    <img src={require('./Style/footer_inst.png')} alt='inst_img' />
+                                                    <img src={require('../../Styles/Components/Footer/footer_inst.png')} alt='inst_img' />
                                                 </a>
                                             </button>
 

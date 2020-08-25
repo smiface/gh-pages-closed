@@ -4,7 +4,7 @@ import Context from './Components/Context'
 import { data } from './Data'
 import { HashRouter, Route, Link } from 'react-router-dom'
 
-
+import Another from './Components/Another/Another'
 import Header from './Components/Header/Header'
 import Index from './Components/Index/Index'
 import Footer from './Components/Footer/Footer'
@@ -46,13 +46,14 @@ class App extends React.Component {
           <Route exact path='/news' component={News} />
           <Route exact path='/' component={Shop} />
           <Route path='/item/:id?' component={Item} />
+          <Route path='/another' component={Another} />
           <Route path='/roulette' component={Roulette} />
           <Route path='/watchApp' component={WatchApp} />
           <Route path='/gtamap' component={Gtamap} />
 
           <Footer />
 
-
+          
 
         </Context.Provider>
       </HashRouter>

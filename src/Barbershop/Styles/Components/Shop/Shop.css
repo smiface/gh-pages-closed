@@ -1,0 +1,292 @@
+.shop-component {
+  height: unset;
+  padding: 50px 0;
+}
+
+.shop-component h3 {
+  margin: 0
+}
+
+.shop-component div nav {
+  padding-bottom: 50px;
+}
+
+.shopItems-component {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* padding: 50px 0; */
+}
+
+.shopItems-component .shop-item {
+  width: 220px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin: 7px;
+  padding-bottom: 16px;
+  box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.5);
+  /* Параметры тени */
+}
+
+.shopItems-component .shop-item img {
+  height: 165px;
+  width: 220px;
+}
+
+.shopItems-component .no_items {
+  height: 618px;
+}
+
+.filter {
+  margin: 0;
+}
+
+
+
+.filter h3 {
+  font-size: 24px;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.producers {
+  justify-content: space-between;
+  height: unset;
+
+}
+
+.shop-item p {
+  width: 186px;
+  margin: 15px auto;
+  height: 42px;
+  text-align: left;
+}
+
+.shopItems-component .shop-item :nth-child(3) {
+  width: 186px;
+  margin: 0 auto;
+  height: 42px;
+}
+
+.shop-item :nth-child(3) p {
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.shop-item .btn_Black {
+  width: 60%;
+  height: 100%;
+}
+
+.Item-component,
+.Item-component.content * {
+  height: unset;
+  padding: none;
+  margin: none;
+}
+
+.Item-component {
+  height: 75vh;
+  align-items: center;
+}
+
+.slider {
+  padding: 50px 0;
+  height: 600px;
+}
+
+.slider__main__img {
+  height: unset;
+  width: 460px;
+}
+
+.slider__secondary__img {
+  height: 150px;
+  width: 140px;
+}
+
+.item__info {
+  padding-top: 50px;
+}
+
+.item__info h3 {
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.item__info .buy_item {
+  height: 40px;
+}
+
+.item__info .item_price p {
+  width: 186px;
+  height: 42px;
+}
+
+.Item-component .item_price {
+  background-color: #e5e5e5;
+  height: 40px;
+}
+
+.filter_group h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.shop_nav {
+  height: unset;
+  margin-top: 20px;
+}
+
+.shop_nav button {
+  width: 50px
+}
+
+.shop_nav button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.basket_sum,
+.basket_sum p {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.btn_Basket {
+  height: 40px;
+  width: 40px;
+  background-color: #000;
+  color: #fff
+}
+
+.btn_Basket_error {
+  height: 40px;
+  width: 40px;
+  background-color: grey;
+  color: #fff
+}
+
+.btn_cancel_filter {
+  border: none;
+  border-bottom: 1px #000 solid;
+  margin-bottom: 10px
+}
+
+.basket_item {
+  border-bottom: 1px grey solid;
+  padding-bottom: 10px;
+}
+
+.filter_group form {
+  padding-top: 10px;
+}
+
+.filter {
+  height: 678px;
+}
+
+.flip {
+  width: 1200px;
+}
+
+.shop-component input {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/*  
+input[type=checkbox]:checked {
+  display: block;
+  border: none
+} */
+
+/* input[type=checkbox] {
+  border: 1px red solid;
+  display: none;
+}
+
+input[type=checkbox]:before {
+  display: none;
+  background-color: red;
+}
+
+input[type=checkbox]:checked {
+  content: "\2714";
+  border: 0.1em solid #000;
+  display: inline-block;
+} */
+
+
+
+/* input[type=checkbox]:checked+label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+} */
+
+/* input[type=checkbox]:disabled+label:before {
+  transform: scale(1);
+  border-color: #aaa;
+} */
+
+/* input[type=checkbox]:checked:disabled+label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+} */
+
+/*  */
+@media (max-width: 1366px) {
+
+
+  .basket.btn_Black {
+    width: 300px;
+  }
+
+  .flip {
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .shop-component {
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .shop-component div nav {
+    padding-bottom: 10px;
+  }
+
+  .filter {
+    width: 300px;
+    height: unset;
+  }
+
+  .filter_group {
+    padding-bottom: 20px;
+  }
+
+  .no_items,
+  .shopItems-component {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .shopItems-component {
+    grid-template-columns: 1fr;
+    width: 100%;
+    border: 1px red solid;
+  }
+}

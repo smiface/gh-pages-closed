@@ -1,7 +1,7 @@
 import React from 'react'
 import Context from '../Context'
 import { Link } from 'react-router-dom'
-import './Styles/Header.css'
+import '../../Styles/Components/Header/Header.css'
 
 class Header extends React.Component {
     constructor(props) {
@@ -28,7 +28,9 @@ class Header extends React.Component {
                                         <Link className="" to="/news">Новости</Link>
                                         <Link className="" to="/index">Информация</Link>
                                         <Link className="" to="/price">Прайс-лист</Link>
-                                        <Link className="" to="/roulette">Рулетка</Link>
+                                        <Link className="" to="/another">Другое</Link>
+                                        {/* <Link className="" to="/roulette">Рулетка</Link> */}
+                                        {/* <Link className="" to="/gtamap">GTA map</Link> */}
                                     </nav>
 
                                     <button onClick={() => {
@@ -66,7 +68,7 @@ class Header extends React.Component {
                                         <Link className="" to="/news"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Новости</button></Link>
                                         <Link className="" to="/index"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Информация</button></Link>
                                         <Link className="" to="/price"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Прайс-лист</button></Link>
-                                        <Link className="" to="/roulette"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Рулетка</button></Link>
+                                        <Link className="" to="/another"><button onClick={() => this.setState({ showBar: !this.state.showBar })} > Другое</button></Link>
 
                                         <button onClick={() => {
                                             this.setState({ darkmode: !this.state.darkmode })

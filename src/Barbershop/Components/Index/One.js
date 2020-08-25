@@ -6,7 +6,7 @@ export default function One() {
 
 
       <div className="index-logo">
-        <img src={require('./Styles/indexLogo.png')} className="index-logo" alt='main logo' />
+        <img src={require('../../Styles/Components/Index/indexLogo.png')} className="index-logo" alt='main logo' />
       </div>
 
       <div className="df_jcsa index-info">

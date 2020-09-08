@@ -25,7 +25,7 @@ class ShopItems extends React.Component {
 
                                 {this.state.isBasketShow ? <div> {this.state.basket.map(item =>
                                     <div>
-                                        <img src={require('../Item/Styles/item' + item.id + '.png')} alt='item img' />
+                                        <img src={require('../../Styles/Components/Shop/item' + item.id + '.png')} alt='item img' />
                                         <p>{item.title}</p>
                                         <p>Количество : {item.basketSum + 1}</p>
                                     </div>)} </div> : null}
@@ -42,7 +42,7 @@ class ShopItems extends React.Component {
 
                                             //карточка каждого товара
                                             <div className="shop-item df_col">
-                                                <img src={require('../Item/Styles/item' + item.id + '.png')} alt='item img'/>
+                                                <img src={require('../../Styles/Components/Shop/item' + item.id + '.png')} alt='item img'/>
                                                 <Link to={'item/' + (item.id)}><p>{item.title}</p></Link>
                                                 <div className="df_jcsa ai_center">
                                                     <p>{item.price} ₽</p>
@@ -65,7 +65,7 @@ class ShopItems extends React.Component {
 
                                                     //карточка каждого товара
                                                     <div className="shop-item df_col">
-                                                        <img src={require('../Item/Styles/item' + item.id + '.png')} alt='item img'/>
+                                                        <img src={require('../../Styles/Components/Shop/item' + item.id + '.png')} alt='item img'/>
                                                         <Link to={'item/' + (item.id)}><p>{item.title}</p></Link>
 
                                                         <div className="df_jcsa ai_center">

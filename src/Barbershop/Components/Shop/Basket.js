@@ -21,7 +21,7 @@ class Basket extends React.Component {
                                 return (
 
                                     <div className="df_jcsb ai_center basket_item flip">
-                                        <img src={require('../Item/Styles/item' + item.id + '.png')} className='col-2' alt='item_photo'/>
+                                        <img src={require('../../Styles/Components/Shop/item' + item.id + '.png')} className='col-2' alt='item_photo'/>
                                         <p>{item.title}</p>
 
                                         <div className='df_jcsb col-3 basket_sum'>

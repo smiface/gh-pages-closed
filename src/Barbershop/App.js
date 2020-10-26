@@ -12,10 +12,14 @@ import Price from './Components/Price/Price'
 import News from './Components/News/News'
 import Shop from './Components/Shop/Shop'
 import Item from './Components/Item/Item'
-import Roulette from '../Roulette/Roulette'
 import Gtamap from '../gtamap/Gtamap'
+// import Roulette from '../Roulette/Roulette'
+import Roulette from '../notupx/Roulette/Roulette'
 
 import WatchApp from '../Watch/App'
+// import Landingpage1 from '../Romanova/LandingPage'
+import Highlow from '../notupx/Highlow/Highlow'
+import DradonGame from '../notupx/dradonGame/DradonGame'
 
 class App extends React.Component {
   constructor(props) {
@@ -50,10 +54,10 @@ class App extends React.Component {
           <Route path='/roulette' component={Roulette} />
           <Route path='/watchApp' component={WatchApp} />
           <Route path='/gtamap' component={Gtamap} />
-
+          {/* <Route path='/landingpage1' component={Landingpage1} /> */}
+          <Route path='/highlow' component={Highlow} />
+          <Route path='/dradonGame' component={DradonGame} />
           <Footer />
-
-          
 
         </Context.Provider>
       </HashRouter>

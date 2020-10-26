@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl 700';
+    src: url('./Museo-Sans-Cyr/MuseoSansCyrl_0.otf');
+}
+
+.ta-left {
+    text-align: left;
+}
+
+.df {
+    display: flex;
+}
+
+.df-jcsa {
+    display: flex;
+    justify-content: space-around;
+}
+
+.df-jcsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ai-center {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header .search__btn {
+    transform: scale(1, -1);
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+header * {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Museo Sans Cyrl 700';
+}
+
+header .create__pruse__btn {
+    border: 1px lightgrey solid;
+    padding: 13px 30px;
+    border-radius: 35px;
+    background: none;
+    font-size: 14px;
+    font-family: 'Museo Sans Cyrl 700';
+    transition: 0.5s;
+}
+
+header .create__pruse__btn:hover {
+    border: 0.5px grey solid;
+}
+
+header .login__btn {
+    border: none;
+    padding: 13px 30px;
+    border-radius: 35px;
+    background: #ff8a00;
+    font-size: 14px;
+    font-family: 'Museo Sans Cyrl 700';
+    transition: 0.5s;
+    color: white;
+    margin-right: 15px;
+    margin-left: -10px;
+}
+
+header {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header button:focus {
+    border: none;
+}
+
+/* Museo Sans Cyrl 700 */
+
+.header__search {
+    /* border: 1px red solid; */
+    width: 1400px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    marg
+    /* display: none; */
+    border: 1px red solid;
+    background: #fff;
+}
+
+.header__search .search__btn,
+.header__search * {
+    /* border: 1px red solid; */
+}
+
+.header__search input {
+    display: flex;
+    color: #7e7e7e;
+    font-size: 27px;
+    width: 1000px;
+    border: none;
+}
+.header__search {
+    /* margin-left: 125px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px red solid;
+    opacity: 0;
+    transition: 0.3s;
+}
+.header__search input:focus {
+    outline: none;
+}
+
+.header__search .search__btn {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.header__search .arrow {
+    color: #7e7e7e;
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    /* border: 1px red solid; */
+}

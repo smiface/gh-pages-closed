@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e4a12232e656b78784c1a4e1f43b633",
+    "revision": "59ad6bda99e8799ac990181fd41bd8fd",
     "url": "/gh-pages/index.html"
   },
   {
-    "revision": "81538155526e5348e9ed",
-    "url": "/gh-pages/static/css/main.8ad505da.chunk.css"
+    "revision": "4735f5b2c7dc9fb5dccd",
+    "url": "/gh-pages/static/css/main.7ff8efff.chunk.css"
   },
   {
-    "revision": "8e9a1ae07eab502892a1",
-    "url": "/gh-pages/static/js/2.978a9cf9.chunk.js"
+    "revision": "96804612dfb1c3fbb078",
+    "url": "/gh-pages/static/js/2.5b1c0cbd.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/gh-pages/static/js/2.978a9cf9.chunk.js.LICENSE.txt"
+    "url": "/gh-pages/static/js/2.5b1c0cbd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "81538155526e5348e9ed",
-    "url": "/gh-pages/static/js/main.56fae08a.chunk.js"
+    "revision": "4735f5b2c7dc9fb5dccd",
+    "url": "/gh-pages/static/js/main.7b566698.chunk.js"
   },
   {
     "revision": "2a1184acfdf3ce991eaa",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9e7f96f385e5aee4ed4c4d1090109f6e",
     "url": "/gh-pages/static/media/Roulette.9e7f96f3.png"
+  },
+  {
+    "revision": "6cf5bbbe4043b460b4f560eb1ba44e57",
+    "url": "/gh-pages/static/media/background_1.6cf5bbbe.png"
   },
   {
     "revision": "efc8423709047dcad4a6a1dd46729327",
@@ -224,11 +228,43 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gh-pages/static/media/watch_1.d34703b1.png"
   },
   {
+    "revision": "ad234d19df558d32bed28e495d350137",
+    "url": "/gh-pages/static/media/watch_10.ad234d19.png"
+  },
+  {
+    "revision": "2066368dbe11488cc54edfe8748ab961",
+    "url": "/gh-pages/static/media/watch_11.2066368d.png"
+  },
+  {
     "revision": "9a7ba0f5db7e558ed504151f8ae0a9fc",
     "url": "/gh-pages/static/media/watch_2.9a7ba0f5.png"
   },
   {
     "revision": "5669d4665c1e6f27c279815827fa046c",
     "url": "/gh-pages/static/media/watch_3.5669d466.png"
+  },
+  {
+    "revision": "fbc6e517cd1839148df762aa0ceca9b4",
+    "url": "/gh-pages/static/media/watch_4.fbc6e517.png"
+  },
+  {
+    "revision": "e9a2d06ce223e49d2eb4585fffdd3690",
+    "url": "/gh-pages/static/media/watch_5.e9a2d06c.png"
+  },
+  {
+    "revision": "4cdd05ec4f5adaaa54d4dae5d4ae32ef",
+    "url": "/gh-pages/static/media/watch_6.4cdd05ec.png"
+  },
+  {
+    "revision": "51dc93c08c1bba7e42fb8d93ce4cfcf0",
+    "url": "/gh-pages/static/media/watch_7.51dc93c0.png"
+  },
+  {
+    "revision": "98746cd311302ab7c48a84326a2f92ef",
+    "url": "/gh-pages/static/media/watch_8.98746cd3.png"
+  },
+  {
+    "revision": "650b9cf04ad5fa9580bc0fe380db430f",
+    "url": "/gh-pages/static/media/watch_9.650b9cf0.png"
   }
 ]);

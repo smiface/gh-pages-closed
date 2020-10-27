@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/gh-pages/static/css/main.8ad505da.chunk.css",
-    "main.js": "/gh-pages/static/js/main.56fae08a.chunk.js",
-    "main.js.map": "/gh-pages/static/js/main.56fae08a.chunk.js.map",
+    "main.css": "/gh-pages/static/css/main.7ff8efff.chunk.css",
+    "main.js": "/gh-pages/static/js/main.7b566698.chunk.js",
+    "main.js.map": "/gh-pages/static/js/main.7b566698.chunk.js.map",
     "runtime-main.js": "/gh-pages/static/js/runtime-main.5f5458f6.js",
     "runtime-main.js.map": "/gh-pages/static/js/runtime-main.5f5458f6.js.map",
-    "static/js/2.978a9cf9.chunk.js": "/gh-pages/static/js/2.978a9cf9.chunk.js",
-    "static/js/2.978a9cf9.chunk.js.map": "/gh-pages/static/js/2.978a9cf9.chunk.js.map",
+    "static/js/2.5b1c0cbd.chunk.js": "/gh-pages/static/js/2.5b1c0cbd.chunk.js",
+    "static/js/2.5b1c0cbd.chunk.js.map": "/gh-pages/static/js/2.5b1c0cbd.chunk.js.map",
     "index.html": "/gh-pages/index.html",
-    "precache-manifest.f385dcbd005c434a2e972b3fb717c032.js": "/gh-pages/precache-manifest.f385dcbd005c434a2e972b3fb717c032.js",
+    "precache-manifest.9c66c8d91586b38c6673f8e4985f9775.js": "/gh-pages/precache-manifest.9c66c8d91586b38c6673f8e4985f9775.js",
     "service-worker.js": "/gh-pages/service-worker.js",
-    "static/css/main.8ad505da.chunk.css.map": "/gh-pages/static/css/main.8ad505da.chunk.css.map",
-    "static/js/2.978a9cf9.chunk.js.LICENSE.txt": "/gh-pages/static/js/2.978a9cf9.chunk.js.LICENSE.txt",
+    "static/css/main.7ff8efff.chunk.css.map": "/gh-pages/static/css/main.7ff8efff.chunk.css.map",
+    "static/js/2.5b1c0cbd.chunk.js.LICENSE.txt": "/gh-pages/static/js/2.5b1c0cbd.chunk.js.LICENSE.txt",
     "static/media/Footer.css": "/gh-pages/static/media/FooterBg.31a4e491.png",
     "static/media/App.css": "/gh-pages/static/media/content_bg_light.c85f44ac.png",
     "static/media/Roulette.png": "/gh-pages/static/media/Roulette.9e7f96f3.png",
+    "static/media/header.css": "/gh-pages/static/media/watch_10.ad234d19.png",
     "static/media/gallery1.png": "/gh-pages/static/media/gallery1.481a071d.png",
     "static/media/gallery2.png": "/gh-pages/static/media/gallery2.8d4065e7.png",
     "static/media/gallery3.png": "/gh-pages/static/media/gallery3.db91d713.png",
@@ -57,13 +58,20 @@
     "static/media/item9_2.png": "/gh-pages/static/media/item9_2.69cc50af.png",
     "static/media/item9_3.png": "/gh-pages/static/media/item9_3.25fac99e.png",
     "static/media/watch_1.png": "/gh-pages/static/media/watch_1.d34703b1.png",
+    "static/media/watch_11.png": "/gh-pages/static/media/watch_11.2066368d.png",
     "static/media/watch_2.png": "/gh-pages/static/media/watch_2.9a7ba0f5.png",
-    "static/media/watch_3.png": "/gh-pages/static/media/watch_3.5669d466.png"
+    "static/media/watch_3.png": "/gh-pages/static/media/watch_3.5669d466.png",
+    "static/media/watch_4.png": "/gh-pages/static/media/watch_4.fbc6e517.png",
+    "static/media/watch_5.png": "/gh-pages/static/media/watch_5.e9a2d06c.png",
+    "static/media/watch_6.png": "/gh-pages/static/media/watch_6.4cdd05ec.png",
+    "static/media/watch_7.png": "/gh-pages/static/media/watch_7.51dc93c0.png",
+    "static/media/watch_8.png": "/gh-pages/static/media/watch_8.98746cd3.png",
+    "static/media/watch_9.png": "/gh-pages/static/media/watch_9.650b9cf0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5f5458f6.js",
-    "static/js/2.978a9cf9.chunk.js",
-    "static/css/main.8ad505da.chunk.css",
-    "static/js/main.56fae08a.chunk.js"
+    "static/js/2.5b1c0cbd.chunk.js",
+    "static/css/main.7ff8efff.chunk.css",
+    "static/js/main.7b566698.chunk.js"
   ]
 }

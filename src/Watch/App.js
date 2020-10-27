@@ -1,7 +1,9 @@
 import React from 'react';
 import Context from '../Barbershop/Components/Context'
 import Header from './Header/Header'
+// import Footer from './Footer/Footer'
 import './WatchApp.css'
+
 
 class WatchApp extends React.Component {
   constructor(props) {
@@ -11,25 +13,28 @@ class WatchApp extends React.Component {
   }
 
   updateStyle(value) {
-    this.setState({ style: value }, () => console.log(this.state.style))
+    // this.setState({ style: value }, () => console.log(this.state.style))
   }
 
   render() {
     return (
-      <Context.Consumer>
-                {
-                    (Context) => {
-                        return (
-                            <div  className={Context.darkmode ? 'watchApp_dark' : 'watchApp_light'} >
-                              <Header />
 
-                            </div>
-                        )
-                    }
-                }
-            </Context.Consumer >
+      <Context.Consumer >
+        {
+          (Context) => {
+            return (
+              <div className='watchApp'>
+              {/* <div className={Context.darkmode ? 'watchApp_dark'  : 'watchApp_light'} > */}
+                <Header />
+
+                {/* <Footer /> */}
+              </div>
+            )
+          }
+        }
+      </Context.Consumer >
     )
-}
+  }
 
 }
 export default WatchApp;

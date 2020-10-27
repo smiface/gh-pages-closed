@@ -95,20 +95,19 @@ header button:focus {
 /* Museo Sans Cyrl 700 */
 
 .header__search {
-    /* border: 1px red solid; */
+    /*  */
     width: 1400px;
     padding: 0;
     position: absolute;
     top: 0;
-    marg
     /* display: none; */
-    border: 1px red solid;
+    
     background: #fff;
 }
 
 .header__search .search__btn,
 .header__search * {
-    /* border: 1px red solid; */
+    /*  */
 }
 
 .header__search input {
@@ -122,7 +121,7 @@ header button:focus {
     /* margin-left: 125px; */
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 1px red solid;
+    
     opacity: 0;
     transition: 0.3s;
 }
@@ -142,5 +141,5 @@ header button:focus {
     margin-right: 10px;
     height: 25px;
     width: 25px;
-    /* border: 1px red solid; */
+    /*  */
 }

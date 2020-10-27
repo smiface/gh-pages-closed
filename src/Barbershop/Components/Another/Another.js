@@ -11,6 +11,7 @@ class Another extends React.Component {
         <Link className="" to="/roulette">Рулетка</Link>
         <Link to='/highlow'> Highlow </Link>
         <Link to='/dradonGame'>Dragon</Link>
+        <Link to='/watchapp'>Watch</Link>
         {/* <Link className="landingpage1" to="/landingpage1">Романова Лера</Link> */}
         {/* <Link className="" to="/gtamap">GTA map</Link> */}
       </div>

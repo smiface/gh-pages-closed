@@ -1,28 +1,26 @@
-import React from 'react'
-import Context from '../Context';
+// import React from 'react'
+// import Context from '../../Barbershop/Components/Context'
+// import './footer.css'
 
-class Footer extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+// class Footer extends React.Component {
+//     constructor(props) {
+//         super(props)
+//     }
 
 
-    render() {
-        return (
-            <Context.Consumer>
-                {
-                    (Context) => {
-                        return (
-                            <footer>
-                              Footer
-                            </footer>
-                        )
-                    }
-                }
-            </Context.Consumer >
+//     render() {
+//         return (
+//             <Context.Consumer>
+//                 {
+//                     (Context) => {
+//                         return (
+//                             )
+//                     }
+//                 }
+//             </Context.Consumer >
 
-        )
-    }
+//         )
+//     }
 
-}
-export default Footer;
+// }
+// export default Footer;

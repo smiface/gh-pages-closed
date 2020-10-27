@@ -11,7 +11,7 @@ class Footer extends React.Component {
                 {
                     (Context) => {
                         return (
-                            <footer className="">
+                            <footer className="barber__footer">
                                 <div className='container'>
 
                                     <div>

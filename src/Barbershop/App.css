@@ -151,7 +151,9 @@ main.main_light .btn_Black {
     width: 200px;
     text-align: left;
 }
-
+.ta_center {
+    text-align: center;
+}
 .loginBtn {
     background-image: url('/src/Barbershop/svg/login.svg');
     background-size: auto;

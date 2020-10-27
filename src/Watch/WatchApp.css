@@ -1,5 +1,15 @@
 .watchApp_dark .container {
     background-color: #f0eeee;
-}.watchApp_light.container {
+}
+
+.watchApp_light.container {
     background-color: pink;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.watchAppComponent *,
+.watch_one * {
+    font-family: 'Poppins', sans-serif;
 }

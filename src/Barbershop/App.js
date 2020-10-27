@@ -13,11 +13,10 @@ import News from './Components/News/News'
 import Shop from './Components/Shop/Shop'
 import Item from './Components/Item/Item'
 import Gtamap from '../gtamap/Gtamap'
-// import Roulette from '../Roulette/Roulette'
-import Roulette from '../notupx/Roulette/Roulette'
 
 import WatchApp from '../Watch/App'
-// import Landingpage1 from '../Romanova/LandingPage'
+
+import Roulette from '../notupx/Roulette/Roulette'
 import Highlow from '../notupx/Highlow/Highlow'
 import DradonGame from '../notupx/dradonGame/DradonGame'
 

@@ -1,0 +1,49 @@
+.copypaste_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.copypaste_component .ta_center {
+    margin: 50px auto;
+}
+
+.copypaste_item {
+    font-size: 10px;
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px white solid;
+    margin: 10px auto;
+    background: black;
+    transition: 0.3s;
+}
+button.copypaste_item:hover{ 
+    border: 1px grey solid;
+    transition: 0.1s;
+}
+.copypaste_item:active {
+    padding: 31px;
+    border: 1px red solid;
+}
+
+@media (max-width: 1800px) {
+    .copypaste_grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 1200px) {
+    .copypaste_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 720px) {
+    .copypaste_grid {
+        grid-template-columns: 1fr;
+    }
+}

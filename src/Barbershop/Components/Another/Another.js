@@ -12,6 +12,9 @@ class Another extends React.Component {
         <Link to='/highlow'> Highlow </Link>
         <Link to='/dradonGame'>Dragon</Link>
         <Link to='/watchapp'>Watch</Link>
+        <Link to='/clipsSmiface'>clips</Link>
+        <Link to='/chatPaste'>chatPaste</Link>
+        
         {/* <Link className="landingpage1" to="/landingpage1">Романова Лера</Link> */}
         {/* <Link className="" to="/gtamap">GTA map</Link> */}
       </div>

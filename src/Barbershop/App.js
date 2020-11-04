@@ -20,6 +20,9 @@ import Roulette from '../notupx/Roulette/Roulette'
 import Highlow from '../notupx/Highlow/Highlow'
 import DradonGame from '../notupx/dradonGame/DradonGame'
 
+import clipsSmiface from '../twitchclips/Smiface/clips'
+import chatPaste from '../chatpaste/chatpaste'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -56,6 +59,10 @@ class App extends React.Component {
           {/* <Route path='/landingpage1' component={Landingpage1} /> */}
           <Route path='/highlow' component={Highlow} />
           <Route path='/dradonGame' component={DradonGame} />
+          <Route path='/clipsSmiface' component={clipsSmiface} />
+          <Route path='/chatPaste' component={chatPaste} />
+          
+          
           <Footer />
 
         </Context.Provider>

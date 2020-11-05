@@ -1,0 +1,15 @@
+.lazyload_page {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px grey solid;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.lazy_component img {
+    width: 300px;
+    margin: 0 auto;
+}

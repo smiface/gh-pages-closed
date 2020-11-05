@@ -1,0 +1,53 @@
+.porten_component footer {
+    background-image: url('../img/4.jpg');
+    height: 400px;
+}
+
+.porten_component footer .df_col {
+    width: 350px;
+    height: 50%;
+    justify-content: space-between;
+}
+.porten_component footer h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+}
+.porten_component footer p {
+    font-size: 14px;
+}
+.porten_component footer button {
+    background: #0F0F0F;
+    height: 41px;
+    font-size: 14px;
+    border: none;
+    width: auto;
+}
+.porten_component footer .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.porten_component footer .grid button:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.porten_component footer .about {
+    margin: 50px 0;
+}
+.porten_component footer .feedback button {
+    padding: 0 20px;
+    font-family: 'PT Sans';
+}
+.porten_component footer  button:hover {
+    background: black;
+    transition: 0.3s;
+}
+.porten_component footer .feedback input {
+    opacity: 0.9;
+    background: gray;
+}
+.porten_component footer .feedback input::placeholder {
+    color: white;
+    padding-left: 10px;
+}

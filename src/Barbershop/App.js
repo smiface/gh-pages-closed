@@ -13,8 +13,10 @@ import News from './Components/News/News'
 import Shop from './Components/Shop/Shop'
 import Item from './Components/Item/Item'
 import Gtamap from '../gtamap/Gtamap'
+import Home from '../Home/home'
 
 import WatchApp from '../Watch/App'
+import Porten from '../Porten/index'
 
 import Roulette from '../notupx/Roulette/Roulette'
 import Highlow from '../notupx/Highlow/Highlow'
@@ -22,6 +24,8 @@ import DradonGame from '../notupx/dradonGame/DradonGame'
 
 import clipsSmiface from '../twitchclips/Smiface/clips'
 import chatPaste from '../chatpaste/chatpaste'
+
+import lazyloadPage from '../lazyload/lazyload'
 
 class App extends React.Component {
   constructor(props) {
@@ -42,15 +46,19 @@ class App extends React.Component {
       <HashRouter >
         <Context.Provider value={{
           data: data,
-          darkmode: this.state.darkmode
+          darkmode: this.state.darkmode,
+          changeDarkMode() {
+            this.setState({ darkmode: !this.state.darkmode }, () => console.log(this.state.darkmode))
+          }
         }}>
 
-          <Header changeDarkMode={this.changeDarkMode} />
-
+          {/* <Header changeDarkMode={this.changeDarkMode} /> */}
+          <Home />
           <Route exact path='/index' component={Index} />
           <Route exact path='/price' component={Price} />
           <Route exact path='/news' component={News} />
-          <Route exact path='/' component={Shop} />
+          <Route exact path='/shop' component={Shop} />
+          <Route exact path='/' component={Another} />
           <Route path='/item/:id?' component={Item} />
           <Route path='/another' component={Another} />
           <Route path='/roulette' component={Roulette} />
@@ -61,9 +69,11 @@ class App extends React.Component {
           <Route path='/dradonGame' component={DradonGame} />
           <Route path='/clipsSmiface' component={clipsSmiface} />
           <Route path='/chatPaste' component={chatPaste} />
+          <Route path='/lazyloadPage' component={lazyloadPage} />
+          <Route path='/Porten' component={Porten} />
           
-          
-          <Footer />
+
+          {/* <Footer /> */}
 
         </Context.Provider>
       </HashRouter>

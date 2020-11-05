@@ -1,0 +1,27 @@
+.homeBtn {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 10px;
+
+    height: 100%;
+    overflow: hidden;
+    margin-left: -200px;
+}
+
+.homeBtn .link {
+    font-size: 40px;
+    padding: 10px 20px;
+    opacity: 0.5;
+    transition: 0.1s;
+    margin-bottom: 10px;
+    background: black;
+}
+
+.homeBtn:hover .link {
+    position: relative;
+    opacity: 1;
+    transition: 0.1s;
+    margin-left: 200px;
+}

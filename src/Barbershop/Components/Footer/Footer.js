@@ -13,31 +13,53 @@ class Footer extends React.Component {
                         return (
                             <footer className="barber__footer">
                                 <div className='container'>
+                                    <button className="btn_Black  btn_nav">
 
+                                        <a href="https://vk.com/">
+                                            <img src={require('../../Styles/Components/Footer/footer_vk.png')} alt='vk_img' />
+                                        </a>
+                                    </button>
+
+                                    <button className="btn_Black btn_nav">
+                                        <a href="https://www.facebook.com/">
+                                            <img src={require('../../Styles/Components/Footer/footer_fb.png')} alt='fb_img' />
+
+                                        </a>
+                                    </button>
+
+                                    <button className="btn_Black btn_nav">
+                                        <a href="https://www.instagram.com/">
+                                            <img src={require('../../Styles/Components/Footer/footer_inst.png')} alt='inst_img' />
+                                        </a>
+                                    </button>
+                                </div>
+                                
+                                <div className=' hidden'>
+                            
                                     <div>
-                                        <p className="col-4"> БАРБЕРШОП «БОРОДИНСКИЙ» АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 КАК НАС НАЙТИ? ТЕЛЕФОН: +7 (495) 666-02-66 </p>
+                                        <p className="col-4"> Улица Пушкина, дом Колотушкина </p>
                                     </div>
 
                                     <div className=" df_col">
-                                        <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                                        {/* <p>ДАВАЙТЕ ДРУЖИТЬ!</p> */}
                                         <div className="df_jcsb">
 
                                             <button className="btn_Black  btn_nav">
 
-                                                <a href="https://vk.com/htmlacademy">
+                                                <a href="https://vk.com/">
                                                     <img src={require('../../Styles/Components/Footer/footer_vk.png')} alt='vk_img' />
                                                 </a>
                                             </button>
 
                                             <button className="btn_Black btn_nav">
-                                                <a href="https://www.facebook.com/htmlacademy/">
+                                                <a href="https://www.facebook.com/">
                                                     <img src={require('../../Styles/Components/Footer/footer_fb.png')} alt='fb_img' />
 
                                                 </a>
                                             </button>
 
                                             <button className="btn_Black btn_nav">
-                                                <a href="https://www.instagram.com/htmlacademy/">
+                                                <a href="https://www.instagram.com/">
                                                     <img src={require('../../Styles/Components/Footer/footer_inst.png')} alt='inst_img' />
                                                 </a>
                                             </button>
@@ -50,7 +72,7 @@ class Footer extends React.Component {
                                         <button className="btn_Black col-2" > <a href="https://htmlacademy.ru/">HTML Academy </a></button>
                                     </div> */}
 
-                                    <div> Т.к. изначально макет HTML Academy - адрес и ссылки на них</div>
+                                    {/* <div> макет багет пакет пхукет</div> */}
 
                                 </div>
 

@@ -1,0 +1,9 @@
+.top-line {
+    margin: 10px auto;
+}
+.top-line img {
+    margin-right: 10px;
+}
+.top-line * {
+    color: grey;
+}

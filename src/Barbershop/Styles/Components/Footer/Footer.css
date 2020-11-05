@@ -1,4 +1,4 @@
-footer {
+.barber__footer {
     padding: 50px 0;
     display: flex;
     align-items: center;
@@ -9,18 +9,35 @@ footer {
     /* color: #fff; */
 }
 
-.barber__footer .container {
+/* .barber__footer .container {
     width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+} */
+
+.barber__footer .container {
+    width: 300px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+.barber__footer .container .btn_Black {
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .container div {
     margin: 0;
 }
-
+.barber__footer  {
+    width: 100%;
+}
 .barber__footer .btn_Black {
     background-color: #000;
     color: white;
@@ -53,10 +70,3 @@ footer .container div {
     color: #000;
 }
 
-
-@media (max-width: 1280px) {
-    .barber__footer .container {
-        width: 100%;
-        flex-direction: column;
-    }
-}

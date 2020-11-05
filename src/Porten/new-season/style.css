@@ -1,0 +1,30 @@
+
+.new-season {
+    height: 730px;
+}
+.new-season .left {
+    width: 1040px;
+    background: black;
+}
+.new-season .title hr {
+    margin: 50px auto;
+}
+.new-season .right {
+    background-image: url('../img/3.jpg');
+    width: 880px;
+}
+.new-season .items {
+    width: 880px;
+}
+.new-season .right .border {
+    width: 138px;
+}
+
+.new-season .right hr {
+    margin-bottom: 29px;
+    margin-top: 20px;
+}
+.new-season .right h2 {
+    margin-top: 491px;
+    margin-bottom: 0;
+}

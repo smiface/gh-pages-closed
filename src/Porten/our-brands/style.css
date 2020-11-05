@@ -1,0 +1,8 @@
+.our-brands .title hr,
+.our-brands .title {
+    margin: 50px 0;
+}
+.our-brands .grid  {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}

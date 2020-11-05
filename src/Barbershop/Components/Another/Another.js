@@ -8,12 +8,10 @@ class Another extends React.Component {
   render() {
     return (
       <div className='another__component'>
-        <Link className="" to="/roulette">Рулетка</Link>
-        <Link to='/highlow'> Highlow </Link>
-        <Link to='/dradonGame'>Dragon</Link>
-        <Link to='/watchapp'>Watch</Link>
+        <Link className="" to="/roulette">notupx</Link>
         <Link to='/clipsSmiface'>clips</Link>
         <Link to='/chatPaste'>chatPaste</Link>
+        <Link to='/watchapp'>Watch</Link>
         
         {/* <Link className="landingpage1" to="/landingpage1">Романова Лера</Link> */}
         {/* <Link className="" to="/gtamap">GTA map</Link> */}

@@ -8,12 +8,18 @@ body {
     padding: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 main {
     background-image: url('./Styles/bg-light3.png');
     background-color: #000;
     background-repeat: no-repeat;
 }
-
+.m0a {
+    margin: 0 auto;
+}
 main.main_dark {
     background-image: url('./Styles/Layer_dark.png');
 }
@@ -134,6 +140,10 @@ main.main_light .btn_Black {
     flex-direction: column;
     margin: 0 auto;
 }
+.jc_center {
+    display: flex;
+    justify-content: center;
+}
 
 .grid {
     display: grid;
@@ -151,9 +161,11 @@ main.main_light .btn_Black {
     width: 200px;
     text-align: left;
 }
+
 .ta_center {
     text-align: center;
 }
+
 .loginBtn {
     background-image: url('/src/Barbershop/svg/login.svg');
     background-size: auto;

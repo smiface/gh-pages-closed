@@ -1,0 +1,16 @@
+.new-goods  {
+    background: black;
+    padding: 125px 0;
+}
+
+.new-goods hr {
+    margin: 40px 0;
+}
+.new-goods .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+}
+.new-goods .watch_item {
+    margin: 0 11px 40px 11px;
+}

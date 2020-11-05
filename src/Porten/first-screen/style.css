@@ -1,0 +1,39 @@
+.first-screen {
+    background-image: url(../img/1.jpg);
+    width: 100%;
+    height: 810px;
+}
+
+.first-screen .border {
+    height: 320px;
+    width: 320px;
+    border: 2px white solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-screen .border h2 {
+    text-transform: uppercase;
+    font-family: 'Post No Bills Jaffna Bold';
+    font-size: 64px;
+    line-height: 64px;
+}
+.first-screen .border hr {
+    width: 185px;
+    margin-bottom: 8px;
+}
+.first-screen .border p {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'PT SANS';
+}
+.first-screen  .about {
+    font-size: 16px;
+    font-family: 'PT SANS';
+    width: 730px;
+    margin-top: 78px;
+}
+.first-screen .wrapper {
+    height: 100%;
+    justify-content: center;
+}

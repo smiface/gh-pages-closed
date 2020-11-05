@@ -1,0 +1,21 @@
+.collection-2018  {
+    height: 600px;
+}
+
+.collection-2018 .left {
+    width: 880px;
+}
+.collection-2018 .right {
+    width: 1040px;
+    background: black;
+}
+.collection-2018 hr {
+    margin: 40px 0;
+}
+.collection-2018 .right .about {
+    width: 464px;
+}
+.collection-2018 .right .border {
+    width: 311px;
+    margin-top: 61px;
+}

@@ -1,0 +1,2 @@
+(this.webpackJsonpmyapp=this.webpackJsonpmyapp||[]).push([[8],{150:function(e,a,t){"use strict";t.r(a);var p=t(0),s=t.n(p);a.default=function(){return s.a.createElement("div",{className:"lazy_component"},s.a.createElement("img",{src:"https://images.hdqwalls.com/download/hyper-scape-8k-5z-7680x4320.jpg"}))}}}]);
+//# sourceMappingURL=8.f6bd95b2.chunk.js.map

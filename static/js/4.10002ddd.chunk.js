@@ -1,0 +1,2 @@
+(this.webpackJsonpmyapp=this.webpackJsonpmyapp||[]).push([[4],{146:function(e,t,a){"use strict";a.r(t);var s=a(0),c=a.n(s);t.default=function(){return c.a.createElement("div",{className:"lazy_component"},c.a.createElement("img",{src:"https://images.hdqwalls.com/download/rolls-royce-wraith-kryptos-collection-2020-7d-7680x4320.jpg"}))}}}]);
+//# sourceMappingURL=4.10002ddd.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpmyapp=this.webpackJsonpmyapp||[]).push([[5],{147:function(a,e,t){"use strict";t.r(e);var s=t(0),p=t.n(s);e.default=function(){return p.a.createElement("div",{className:"lazy_component"},p.a.createElement("img",{src:"https://images.hdqwalls.com/wallpapers/yellow-material-design-abstract-8k-8u.jpg"}))}}}]);
-//# sourceMappingURL=5.1267a7d4.chunk.js.map

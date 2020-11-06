@@ -1,2 +1,0 @@
-(this.webpackJsonpmyapp=this.webpackJsonpmyapp||[]).push([[6],{148:function(a,e,s){"use strict";s.r(e);var n=s(0),t=s.n(n);e.default=function(){return t.a.createElement("div",{className:"lazy_component"},t.a.createElement("img",{src:"https://images.hdqwalls.com/download/assassins-creed-valhalla-female-eivor-axe-8k-bn-7680x4320.jpg"}))}}}]);
-//# sourceMappingURL=6.bc457cdd.chunk.js.map

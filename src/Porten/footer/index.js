@@ -3,7 +3,7 @@ import './style.css'
 
 class Footer extends React.Component {
     render() {
-        return <footer className='component df_jcsb ai_center'>
+        return <footer className='component adapt df_jcsb ai_center'>
             <div className='df_col'>
                 <h3>О магазине</h3>
                 <p className='about'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.</p>

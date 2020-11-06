@@ -3,8 +3,8 @@ import './style.css'
 
 class NewSeason extends React.Component {
     render() {
-        return <div className='component new-season df'>
-            <div className='left df_col jc_center ta_center ai_center'>
+        return <div className='component adapt new-season  df'>
+            <div className='adapt left df_col jc_center ta_center ai_center'>
                 {/* # */}
                 <div className='title df_col ai_center'>
                     <h2>
@@ -12,8 +12,8 @@ class NewSeason extends React.Component {
                 </h2>
                     <hr></hr>
                 </div>
-                <div className='df_jcsb grid'>
-                    <div className='watch_item ta_left'>
+                <div className='df_jcsb adapt grid'>
+                    <div className=' watch_item ta_left'>
                         <div className='watch_bg df ai_center jc_center'>
                             <img src={require('../img/2.png')} />
                         </div>
@@ -38,7 +38,7 @@ class NewSeason extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className='right df_col ta_center ai_center'>
+            <div className='adapt right df_col ta_center ai_center'>
                 {/* # */}
                 <div className='title df_col ai_center'>
                     <h2>Новая коллекция</h2>

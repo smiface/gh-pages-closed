@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 class SecondLine extends React.Component {
     render() {
-        return <div className='component  second-line  df_jcsb ai_center wrapper_mid '>
+        return <div className='component adapt second-line  df_jcsb ai_center wrapper_mid '>
 
             <button>
                 <p className='left home_btn '>PORTEN</p>

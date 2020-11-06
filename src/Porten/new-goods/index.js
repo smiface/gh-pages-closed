@@ -3,7 +3,7 @@ import './style.css'
 
 class NewGoods extends React.Component {
     render() {
-        return <div className='component new-goods df'>
+        return <div className='component adapt new-goods df'>
             <div className='df_col ta_center ai_center'>
 
                 <div className='title df_col ai_center'>
@@ -11,7 +11,7 @@ class NewGoods extends React.Component {
                     <hr></hr>
                 </div>
 
-                <div className='df_jcsb grid'>
+                <div className='adapt borderdf_jcsb grid'>
                     <div className='watch_item ta_left '>
                         <div className='watch_bg df ai_center jc_center'>
                             <img src={require('../img/2.png')} />

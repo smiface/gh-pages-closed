@@ -1,4 +1,4 @@
-.new-goods  {
+.new-goods {
     background: black;
     padding: 125px 0;
 }
@@ -6,11 +6,15 @@
 .new-goods hr {
     margin: 40px 0;
 }
+
 .new-goods .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
     margin-top: 30px;
 }
-.new-goods .watch_item {
-    margin: 0 11px 40px 11px;
+
+.new-goods .grid .watch_item {
+    margin: 0 auto;
+    margin-bottom: 35px;
 }

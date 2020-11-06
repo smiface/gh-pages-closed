@@ -1,21 +1,29 @@
-
 .new-season {
     height: 730px;
 }
+
 .new-season .left {
     width: 1040px;
+    padding: 50px 0;
     background: black;
 }
+
 .new-season .title hr {
     margin: 50px auto;
 }
+
 .new-season .right {
     background-image: url('../img/3.jpg');
     width: 880px;
 }
+
 .new-season .grid {
     width: 880px;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.new-season .grid .watch_item {
+    margin: 0 auto;
+    margin-bottom: 35px;
 }
 .new-season .right .border {
     width: 138px;
@@ -25,7 +33,8 @@
     margin-bottom: 29px;
     margin-top: 20px;
 }
-.new-season .right  {
+
+.new-season .right {
     padding-top: 491px;
     margin-bottom: 0;
 }

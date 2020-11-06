@@ -1,51 +1,71 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7239a650bfde1234012e4f1bca8d04d5",
+    "revision": "40b95e585ab3cfb0dfebc23f896b4168",
     "url": "/gh-pages/index.html"
   },
   {
-    "revision": "5d63f1fd2eb342d6564a",
-    "url": "/gh-pages/static/css/main.9604f1be.chunk.css"
+    "revision": "28595371e79d7212e6c6",
+    "url": "/gh-pages/static/css/main.b820cf2a.chunk.css"
   },
   {
-    "revision": "bed4aacbdabc36a09914",
-    "url": "/gh-pages/static/js/2.cc26b379.chunk.js"
+    "revision": "09da7d6ee49e88eccc1c",
+    "url": "/gh-pages/static/js/2.20387d8c.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/gh-pages/static/js/2.cc26b379.chunk.js.LICENSE.txt"
+    "url": "/gh-pages/static/js/2.20387d8c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aec7afe28238480fb1a2",
-    "url": "/gh-pages/static/js/3.8f15c1e1.chunk.js"
+    "revision": "4d7fcca06306830cfd93",
+    "url": "/gh-pages/static/js/3.6dd27027.chunk.js"
   },
   {
-    "revision": "b56c79ca9a5e95cc464e",
-    "url": "/gh-pages/static/js/4.1360840c.chunk.js"
+    "revision": "4f21db5a06a7575042ef",
+    "url": "/gh-pages/static/js/4.9d9d4f18.chunk.js"
   },
   {
-    "revision": "53908114b228ecb37857",
-    "url": "/gh-pages/static/js/5.37f37e90.chunk.js"
+    "revision": "ec5adc83d56ff85a703d",
+    "url": "/gh-pages/static/js/5.f2464cd0.chunk.js"
   },
   {
-    "revision": "02c93ba69c31b01bc3ab",
-    "url": "/gh-pages/static/js/6.76069331.chunk.js"
+    "revision": "3f48e7776a0f37075234",
+    "url": "/gh-pages/static/js/6.f40a07a2.chunk.js"
   },
   {
-    "revision": "15756d2e59d82f2ec466",
-    "url": "/gh-pages/static/js/7.d45eb159.chunk.js"
+    "revision": "b0b60fc839034a0adc96",
+    "url": "/gh-pages/static/js/7.6e7ec000.chunk.js"
   },
   {
-    "revision": "7f1504a3e4aadd1ae2e5",
-    "url": "/gh-pages/static/js/8.d682449f.chunk.js"
+    "revision": "2aca5d130348081b2e1f",
+    "url": "/gh-pages/static/js/8.920628ee.chunk.js"
   },
   {
-    "revision": "5d63f1fd2eb342d6564a",
-    "url": "/gh-pages/static/js/main.c41f1e8c.chunk.js"
+    "revision": "28595371e79d7212e6c6",
+    "url": "/gh-pages/static/js/main.26c7823e.chunk.js"
   },
   {
-    "revision": "cf7d1de73f2df0fa0a54",
-    "url": "/gh-pages/static/js/runtime-main.b5eccda8.js"
+    "revision": "b1f199701b15a7378f84",
+    "url": "/gh-pages/static/js/runtime-main.37fa7757.js"
+  },
+  {
+    "revision": "bbf281fb7e8a024607eea6488fb106d0",
+    "url": "/gh-pages/static/media/1.bbf281fb.jpg"
+  },
+  {
+    "revision": "4e08e59e7c1dcae4e7e5d0ddf4a1d576",
+    "url": "/gh-pages/static/media/2.4e08e59e.png"
+  },
+  {
+    "revision": "086c92dbadae90b951d753558c04b6b8",
+    "url": "/gh-pages/static/media/3.086c92db.jpg"
+  },
+  {
+    "revision": "f099345174a314a3915fe0a5a9eebf49",
+    "url": "/gh-pages/static/media/4.f0993451.jpg"
+  },
+  {
+    "revision": "3a84272449ee0d8f9bf34d495f74ba1f",
+    "url": "/gh-pages/static/media/5.3a842724.jpg"
   },
   {
     "revision": "31a4e4910656bd7a6ea3550f984bb638",
@@ -62,6 +82,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "709bc3c807e9f1976e9c29deb440d47e",
     "url": "/gh-pages/static/media/PTSansBold.709bc3c8.ttf"
+  },
+  {
+    "revision": "47e52d04b20b40b417f255ab9388304c",
+    "url": "/gh-pages/static/media/PostNoBillsJaffna-Bold.47e52d04.woff"
+  },
+  {
+    "revision": "0589606f0a2f3765ecef9622ccadbc36",
+    "url": "/gh-pages/static/media/PostNoBillsJaffna-ExtraBold.0589606f.woff"
+  },
+  {
+    "revision": "3c67221b106acfa178de94410b081c95",
+    "url": "/gh-pages/static/media/PostNoBillsJaffna-Light.3c67221b.woff"
+  },
+  {
+    "revision": "df1e54020d4cf89c4ef5d6b638e1bd34",
+    "url": "/gh-pages/static/media/PostNoBillsJaffna-Medium.df1e5402.woff"
+  },
+  {
+    "revision": "40dbfa98731182a2b3f30930841fbbc4",
+    "url": "/gh-pages/static/media/PostNoBillsJaffna-Regular.40dbfa98.woff"
+  },
+  {
+    "revision": "f924c4d42be5f82c2a7ea7408f6806b1",
+    "url": "/gh-pages/static/media/PostNoBillsJaffna-SemiBold.f924c4d4.woff"
   },
   {
     "revision": "9e7f96f385e5aee4ed4c4d1090109f6e",
@@ -246,6 +290,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "25fac99e0d273a6435c2a2f9d565c7b9",
     "url": "/gh-pages/static/media/item9_3.25fac99e.png"
+  },
+  {
+    "revision": "57d8994f410ff6612f1908cbd7434f62",
+    "url": "/gh-pages/static/media/login.57d8994f.svg"
+  },
+  {
+    "revision": "44889b67f2e2a1c360eaaa5ebea35381",
+    "url": "/gh-pages/static/media/market.44889b67.svg"
+  },
+  {
+    "revision": "e8e67cbd8e283291e4aed1f536c67505",
+    "url": "/gh-pages/static/media/phone.e8e67cbd.svg"
+  },
+  {
+    "revision": "baada30edbb4da985adaa14782e61212",
+    "url": "/gh-pages/static/media/search.baada30e.svg"
   },
   {
     "revision": "d34703b16a9631ddc4040bc3809b21b9",

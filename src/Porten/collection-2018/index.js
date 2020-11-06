@@ -3,11 +3,11 @@ import './style.css'
 
 class Collection2018 extends React.Component {
     render() {
-        return <div className='component collection-2018 df'>
-            <div className='left'>
-                <img src={require('../img/5.jpg')} />
+        return <div className='component adapt collection-2018 df'>
+            <div className='adapt left'>
+                <img className='adapt' src={require('../img/5.jpg')} />
             </div>
-            <div className='right df_col ai_center ta_center jc_center'>
+            <div className='adapt right df_col ai_center ta_center jc_center'>
                 
             <div className='title df_col ai_center'>
                 <h2>коллекция 2018</h2>

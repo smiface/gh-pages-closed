@@ -3,7 +3,7 @@ import './style.css'
 
 class NewSeason extends React.Component {
     render() {
-        return <div className='new-season df'>
+        return <div className='component new-season df'>
             <div className='left df_col jc_center ta_center ai_center'>
                 {/* # */}
                 <div className='title df_col ai_center'>
@@ -12,7 +12,7 @@ class NewSeason extends React.Component {
                 </h2>
                     <hr></hr>
                 </div>
-                <div className='df_jcsb items'>
+                <div className='df_jcsb grid'>
                     <div className='watch_item ta_left'>
                         <div className='watch_bg df ai_center jc_center'>
                             <img src={require('../img/2.png')} />

@@ -3,7 +3,7 @@ import './style.css'
 
 class Collection2018 extends React.Component {
     render() {
-        return <div className='collection-2018 df'>
+        return <div className='component collection-2018 df'>
             <div className='left'>
                 <img src={require('../img/5.jpg')} />
             </div>

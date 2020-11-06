@@ -1,0 +1,13 @@
+.aside_navigation {
+    position: fixed;
+    right: 0;
+    top: 30vh;
+}
+.aside_navigation button {
+    transition: 0.3s;
+    background: black;
+    margin: 10px;
+    padding: 10px;
+    width: 30px;
+    border: 1px black solid;
+}

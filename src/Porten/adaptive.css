@@ -1,0 +1,99 @@
+/* @media (max-width: 1400px) {
+
+
+    .top-line,
+    .second-line {
+        width: 90%;
+    }
+
+    .first-screen,
+    .porten_component,
+    .porten_component .new-season .left,
+    .porten_component .new-season .right,
+    .porten_component .collection-2018 .left,
+    .porten_component .collection-2018 .right,
+    .porten_component .new-goods .grid,
+    .porten_component .our-brands .grid,
+    footer {
+        width: 100%;
+    }
+
+    .porten_component .new-season,
+    .porten_component .collection-2018,
+    .porten_component footer {
+        flex-direction: column;
+    }
+
+    .porten_component .new-season .grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .porten_component .new-season .grid .watch_item {
+        margin: 10px auto;
+    }
+
+    .porten_component .new-goods .grid,
+    .porten_component .our-brands .grid {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .porten_component .new-season .right,
+    .collection-2018 .collection-2018 .left {
+        padding: 0;
+        margin: 0;
+        margin: 0 auto;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .porten_component .new-season,
+    .porten_component .new-season .left,
+    .porten_component .new-season .right,
+    .porten_component .collection-2018,
+    .porten_component .collection-2018 .left,
+    .porten_component .collection-2018 .right {
+        height: unset;
+    }
+
+    .porten_component .new-season .right {
+        padding-top: 400px;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .porten_component .new-season .left .grid {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+}
+
+
+border: 1px red solid; */
+
+@media (max-width: 1400px) {
+
+body .porten_component * {
+    height: unset;
+    width: unset;
+    margin: 0;
+    padding: 0;
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+}
+
+

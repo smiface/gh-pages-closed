@@ -13,8 +13,9 @@
     background-image: url('../img/3.jpg');
     width: 880px;
 }
-.new-season .items {
+.new-season .grid {
     width: 880px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .new-season .right .border {
     width: 138px;
@@ -24,7 +25,7 @@
     margin-bottom: 29px;
     margin-top: 20px;
 }
-.new-season .right h2 {
-    margin-top: 491px;
+.new-season .right  {
+    padding-top: 491px;
     margin-bottom: 0;
 }

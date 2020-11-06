@@ -3,7 +3,7 @@ import './style.css'
 
 class FirstScreen extends React.Component {
     render() {
-        return <div className='first-screen'>
+        return <div className='component first-screen'>
 
             <div className='wrapper df_col'>
                 <div className='border df_col ta_center'>

@@ -1,58 +1,62 @@
+import React from 'react'
+import { Redirect, Route } from "react-router";
+
+
 export const data = {}
 
 data.basket = []
 
 data.news = [
     {
-        id:1,
+        id: 1,
         title: "Это заголовок новости №1",
         date: 11.01,
         text: "№1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
-        id:2,
+        id: 2,
         title: "Это заголовок новости №2",
         date: 12.01,
         text: "№2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
-        id:3,
+        id: 3,
         title: "Это заголовок новости №3",
         date: 13.01,
         text: "№3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
-        id:4,
+        id: 4,
         title: "Это заголовок новости №4",
         date: 14.01,
         text: "№4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
-        id:5,
+        id: 5,
         title: "Это заголовок новости №5",
         date: 15.01,
         text: "№5. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
-        id:6,
+        id: 6,
         title: "Это заголовок новости №6",
         date: 16.01,
         text: "№6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
-        id:7,
+        id: 7,
         title: "Это заголовок новости №7",
         date: 17.01,
         text: "№7. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
-        id:8,
+        id: 8,
         title: "Это заголовок новости №8",
         date: 18.01,
         text: "№8. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
     },
     {
-        id:9,
+        id: 9,
         title: "Это заголовок новости №9",
         date: 19.01,
         text: "№9. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nulla hic quaerat saepe necessitatibus. Fugit, atque consequatur? Ullam ipsam at illum sunt! Saepe odio voluptatibus, rerum nostrum doloremque velit minima."
@@ -67,12 +71,12 @@ data.itemGroup = [
 ]
 
 data.producer = [
-        'Baxter of California', 
-        'Mr Natty',
-        'Suavecito',
-        'Malin+Goetz',
-        'Murray’s',
-        'American Crew'
+    'Baxter of California',
+    'Mr Natty',
+    'Suavecito',
+    'Malin+Goetz',
+    'Murray’s',
+    'American Crew'
 ]
 
 data.items = [
@@ -196,13 +200,40 @@ data.items = [
         stock: 1,
         producer: data.producer[0]
     },
-    
+
 ]
 
 data.numbers = [
-    7, 
-    8, 
+    7,
+    8,
     9
 ]
 
 data.basket = []
+
+data.fakeLogin = (user) => {
+    // console.log(user)
+    let userRequire = JSON.parse(user)
+
+    let userNeeded = data.users.find(item => item.login == userRequire.login)
+    if (userNeeded == undefined) {
+        console.log('wrong login')
+        return <Redirect to="/" />
+    } else
+        if (userRequire.password == userNeeded.password) {
+            console.log('login success')
+            return <Redirect to="/home" />
+        } else {
+            console.log('wrong password')
+            return <Redirect to="/" />
+        }
+}
+
+data.users = [
+    {
+        id: 1,
+        isAdmin: true,
+        login: 'smiface',
+        password: 'smiface'
+    }
+]

@@ -3,6 +3,9 @@ import Context from '../Context'
 import { Link } from 'react-router-dom'
 import '../../Styles/Components/Price/Price.css'
 
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+
 class Price extends React.Component {
    
     render() {
@@ -11,7 +14,9 @@ class Price extends React.Component {
                 {
                     (Context) => {
                         return (
-                            <main className={Context.darkmode ? 'main_dark content df_col ai_center' : 'main_light content df_col ai_center'}>
+                            <>
+                            <Header />
+                            <main className={Context.darkmode ? 'main_dark price_dark content df_col ai_center' : 'main_light  price_light content df_col ai_center'}>
                                 <div className="price-component content ai_center">
                                     <div className="col-11 df_col container">
                                         <h3>Прайс-лист</h3>
@@ -92,7 +97,9 @@ class Price extends React.Component {
                                     </div>
                                 </div>
                             </main>
-
+                            <Footer />
+                            </>
+                            
                         )
                     }
 

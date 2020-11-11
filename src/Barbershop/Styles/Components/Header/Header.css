@@ -8,9 +8,14 @@ header {
 .header__dark {
     background-color: #000;
 }
+.header__light {
+    color: #000;
+    background-color: #fbf5f2;
 
+}
 .header__light * {
-    background-color: #fff;
+    background-color: #fbf5f2;
+
     color: #000;
 }
 

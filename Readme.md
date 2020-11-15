@@ -1,1 +1,0 @@
-<!-- fix barbershop basket, shop, items  -->

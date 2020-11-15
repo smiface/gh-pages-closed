@@ -3,13 +3,31 @@ import Context from '../Context'
 import { Link } from 'react-router-dom'
 import '../../Styles/Components/Header/Header.css'
 
+import Login from '../Login/Login'
+
 class Header extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             // darkmode: Context.darkmode
+            auth: false,
+            authOpen: false
         };
+
+
     }
+
+    updateAuth = (user, cookieKey) => {
+        this.setState({ auth: !this.state.auth, authUser: user, cookieKey: cookieKey, authOpen: !this.state.authOpen })
+        console.log(this.state.auth + this.state.authUser + this.state.cookieKey + this.state.authOpen )
+    }
+
+    componentWillMount(){
+        setInterval(() => {
+            console.log(this.state.auth + this.state.authUser + this.state.cookieKey + this.state.authOpen )
+        }, 1000);
+    }
+
 
 
     render() {
@@ -44,16 +62,34 @@ class Header extends React.Component {
                                         {Context.darkmode ? 'dark mode' : 'light mode'}
                                     </button>
 
-                                    <Link to="/barbershop/login">
-                                        <button>
-                                            <img src={require('../svg/login.svg')} alt='auth_image' />
-                                            <div>Вход</div>
-                                        </button>
-                                    </Link>
+
+                                    <button onClick={() => {
+
+                                        if (this.state.authOpen == false && this.state.auth == false) {
+                                            this.setState({ authOpen: !this.state.authOpen })
+                                            setTimeout(() => {
+                                                document.querySelector('.login_component').style.opacity = '1'
+                                            }, 10);
+                                        } else if (this.state.authOpen == true && this.state.auth == false) {
+                                            document.querySelector('.login_component').style.opacity = '0'
+                                            setTimeout(() => {
+                                                this.setState({ authOpen: !this.state.authOpen })
+                                            }, 300);
+                                        } else {
+                                            if (this.state.auth == true){
+                                                this.updateAuth(0, 0)
+                                            }
+                                        }
+                                    }}>
+                                        <img src={require('../svg/login.svg')} alt='auth_image' />
+                                        <div>
+                                            {(this.state.auth == false) ? 'Вход ' : 'Выход'}
+                                        </div>
+                                    </button>
 
                                 </div>
 
-
+                                {this.state.authOpen == false ? null : <Login updateAuth={this.updateAuth} />}
 
                             </header>
 
@@ -95,8 +131,9 @@ class Header extends React.Component {
 
                     </div>
                 )
-            }}
-            </Context.Consumer>
+            }
+            }
+            </Context.Consumer >
         )
     }
 

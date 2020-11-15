@@ -212,20 +212,24 @@ data.numbers = [
 data.basket = []
 
 data.fakeLogin = (user) => {
-    // console.log(user)
+    // пользователь стал объектом 
     let userRequire = JSON.parse(user)
-
+    // пробуем найти
     let userNeeded = data.users.find(item => item.login == userRequire.login)
+
+    // такого пользователя нет
     if (userNeeded == undefined) {
         console.log('wrong login')
         return <Redirect to="/" />
     } else
+        // если всё верно 
         if (userRequire.password == userNeeded.password) {
-            console.log('login success')
-            return <Redirect to="/home" />
-        } else {
+            // console.log('login success')
+            return userNeeded
+        } else
+        // не верный пароль
+        {
             console.log('wrong password')
-            return <Redirect to="/" />
         }
 }
 
@@ -235,5 +239,11 @@ data.users = [
         isAdmin: true,
         login: 'smiface',
         password: 'smiface'
+    },
+    {
+        id: 2,
+        isAdmin: false,
+        login: 'user123',
+        password: 'user123'
     }
 ]

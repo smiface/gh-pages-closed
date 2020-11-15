@@ -1,0 +1,2 @@
+(this.webpackJsonpmyapp=this.webpackJsonpmyapp||[]).push([[3],{149:function(a,e,n){"use strict";n.r(e);var t=n(0),s=n.n(t);e.default=function(){return s.a.createElement("div",{className:"lazy_component"},s.a.createElement("img",{src:"https://images.hdqwalls.com/download/lamborghini-sian-roadster-2020-new-3f-7680x4320.jpg"}))}}}]);
+//# sourceMappingURL=3.b82cd64f.chunk.js.map

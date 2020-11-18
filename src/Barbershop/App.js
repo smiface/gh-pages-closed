@@ -24,42 +24,37 @@ class Barbershop extends React.Component {
     this.changeDarkMode = this.changeDarkMode.bind(this)
   }
 
-  changeDarkMode() {
-    this.setState({ darkmode: !this.state.darkmode }, () => console.log(this.state.darkmode))
-  }
+  // changeDarkMode() {
+  //   this.setState({ darkmode: !this.state.darkmode }, () => console.log(this.state.darkmode))
+  // }
 
 
 
-  render() {
-    return (
-      <HashRouter >
-        <Context.Consumer>
-          {
-            (Context) => {
-              return (
-                <div>
-                  <Header changeDarkMode={this.changeDarkMode} />
+  // render() {
+  //   return (
+  //     <HashRouter >
+  //       <Context.Consumer>
+  //         {
+  //           (Context) => {
+  //             return (
+  //               <div>
+  //                 <Header changeDarkMode={this.changeDarkMode} />
 
-                  {this.props.inViewComponent}
+                  
 
-                  {/* <Route exact path='/barbershop/index' component={Index} />
-                  <Route exact path='/barbershop/news' component={News} />
-                  <Route exact path='/barbershop/shop' component={Shop} />
-                  <Route exact path='/barbershop/price' component={Price} /> */}
+  //                 <Footer />
+  //               </div>
 
-                  <Footer />
-                </div>
-
-              )
-            }
+  //             )
+  //           }
 
 
-          }
+  //         }
 
-        </Context.Consumer>
-      </HashRouter>
-    )
-  }
+  //       </Context.Consumer>
+  //     </HashRouter>
+  //   )
+  // }
 
 }
 export default Barbershop;

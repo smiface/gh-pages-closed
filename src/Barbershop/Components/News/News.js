@@ -1,22 +1,33 @@
 import React from 'react'
-// import Context from '../Context'
 import Context from '../Context'
 import '../../Styles/Components/News/News.css'
 
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 
-
 class News extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             canEditNews: false,
-            NewsReversed: false
+            NewsReversed: false,
+            test: 123
         }
     }
 
+    componentDidMount() {
+        setInterval(() => {
+            let a = Context;
+            setTimeout(() => {
+                let b = a;
+                b == Context ? console.log(0) : console.log(1)
+            }, 1000);
+        }, 500);
+    }
+
     render() {
+
+
         return (
             <Context.Consumer>
                 {
@@ -30,6 +41,9 @@ class News extends React.Component {
 
                                 <main className={Context.darkmode ? 'news_component main_dark' : 'news_component main_light'}>
 
+                                    <div className='center'>
+                                        {(localStorage.getItem('currentUser') == null) ? 'null' : 'not null'}
+                                    </div>
 
                                     <div className="col-12">
                                         <div className='col-6 df_jcsb'>
@@ -97,8 +111,6 @@ class News extends React.Component {
                                             return (
                                                 <div className="df_col df_jcsb col-12 news_item " key={item.id} >
                                                     <div className="col-10  df_col ">
-
-
 
                                                         {this.state.canEditNews ?
                                                             <div className="df_col col-10 ">

@@ -13,19 +13,17 @@ class Header extends React.Component {
             auth: false,
             authOpen: false
         };
-
-
     }
 
     updateAuth = (user, cookieKey) => {
         this.setState({ auth: !this.state.auth, authUser: user, cookieKey: cookieKey, authOpen: !this.state.authOpen })
-        console.log(this.state.auth + this.state.authUser + this.state.cookieKey + this.state.authOpen )
+        console.log(this.state.auth + this.state.authUser + this.state.cookieKey + this.state.authOpen)
     }
 
-    componentWillMount(){
-        setInterval(() => {
-            console.log(this.state.auth + this.state.authUser + this.state.cookieKey + this.state.authOpen )
-        }, 1000);
+    componentWillMount() {
+        // setInterval(() => {
+        //     console.log(this.state.auth + this.state.authUser + this.state.cookieKey + this.state.authOpen)
+        // }, 1000);
     }
 
 
@@ -65,25 +63,36 @@ class Header extends React.Component {
 
                                     <button onClick={() => {
 
-                                        if (this.state.authOpen == false && this.state.auth == false) {
+                                        let userAuth = localStorage.getItem('currentUser')
+
+                                        if (this.state.authOpen == false && userAuth == null) {
+                                            // показать форму авторизации
                                             this.setState({ authOpen: !this.state.authOpen })
                                             setTimeout(() => {
                                                 document.querySelector('.login_component').style.opacity = '1'
                                             }, 10);
-                                        } else if (this.state.authOpen == true && this.state.auth == false) {
+                                        }
+                                        else if (this.state.authOpen == true && userAuth == null) {
+                                            // скрыть форму авторизации
                                             document.querySelector('.login_component').style.opacity = '0'
                                             setTimeout(() => {
                                                 this.setState({ authOpen: !this.state.authOpen })
                                             }, 300);
-                                        } else {
-                                            if (this.state.auth == true){
-                                                this.updateAuth(0, 0)
+                                        }
+                                        else {
+                                            // выйти
+                                            if (this.state.auth != null) {
+                                                // this.updateAuth(0, 0)
+                                                // userAuth = null
+                                                Context.data.logOut()
+                                                this.setState({ auth : false})
                                             }
                                         }
                                     }}>
                                         <img src={require('../svg/login.svg')} alt='auth_image' />
                                         <div>
-                                            {(this.state.auth == false) ? 'Вход ' : 'Выход'}
+                                            {
+                                                (localStorage.getItem('currentUser') === null) ? 'Вход ' : 'Выход'}
                                         </div>
                                     </button>
 

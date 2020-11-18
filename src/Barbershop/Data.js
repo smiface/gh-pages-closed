@@ -211,7 +211,7 @@ data.numbers = [
 
 data.basket = []
 
-data.fakeLogin = (user) => {
+data.logIn = (user) => {
     // пользователь стал объектом 
     let userRequire = JSON.parse(user)
     // пробуем найти
@@ -225,12 +225,21 @@ data.fakeLogin = (user) => {
         // если всё верно 
         if (userRequire.password == userNeeded.password) {
             // console.log('login success')
+            
+            // записать прользователя
+            let userNeededString = JSON.stringify(userNeeded)
+            localStorage.setItem('currentUser', userNeededString )
+
             return userNeeded
         } else
         // не верный пароль
         {
             console.log('wrong password')
         }
+}
+
+data.logOut = () => {
+    localStorage.removeItem('currentUser')
 }
 
 data.users = [

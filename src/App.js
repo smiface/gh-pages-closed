@@ -16,6 +16,7 @@ import BarbershopLogin from './Barbershop/Components/Login/Login'
 
 import Gtamap from './gtamap/Gtamap'
 import Home from './Home/home'
+
 import WatchApp from './Watch/App'
 import Porten from './Porten/index'
 

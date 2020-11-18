@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/gh-pages/static/css/main.7495389d.chunk.css",
-    "main.js": "/gh-pages/static/js/main.16d01b3d.chunk.js",
-    "main.js.map": "/gh-pages/static/js/main.16d01b3d.chunk.js.map",
+    "main.css": "/gh-pages/static/css/main.6f02107f.chunk.css",
+    "main.js": "/gh-pages/static/js/main.48965ce4.chunk.js",
+    "main.js.map": "/gh-pages/static/js/main.48965ce4.chunk.js.map",
     "runtime-main.js": "/gh-pages/static/js/runtime-main.bf82f82f.js",
     "runtime-main.js.map": "/gh-pages/static/js/runtime-main.bf82f82f.js.map",
     "static/js/2.a4a1aa23.chunk.js": "/gh-pages/static/js/2.a4a1aa23.chunk.js",
@@ -20,9 +20,9 @@
     "static/js/8.1140735d.chunk.js": "/gh-pages/static/js/8.1140735d.chunk.js",
     "static/js/8.1140735d.chunk.js.map": "/gh-pages/static/js/8.1140735d.chunk.js.map",
     "index.html": "/gh-pages/index.html",
-    "precache-manifest.e03c1b475fe1ef2b388f799ffd53f00f.js": "/gh-pages/precache-manifest.e03c1b475fe1ef2b388f799ffd53f00f.js",
+    "precache-manifest.eafa6c346d8f9421330bff3d854cae4b.js": "/gh-pages/precache-manifest.eafa6c346d8f9421330bff3d854cae4b.js",
     "service-worker.js": "/gh-pages/service-worker.js",
-    "static/css/main.7495389d.chunk.css.map": "/gh-pages/static/css/main.7495389d.chunk.css.map",
+    "static/css/main.6f02107f.chunk.css.map": "/gh-pages/static/css/main.6f02107f.chunk.css.map",
     "static/js/2.a4a1aa23.chunk.js.LICENSE.txt": "/gh-pages/static/js/2.a4a1aa23.chunk.js.LICENSE.txt",
     "static/media/style.css": "/gh-pages/static/media/PostNoBillsJaffna-SemiBold.f924c4d4.woff",
     "static/media/2.png": "/gh-pages/static/media/2.4e08e59e.png",
@@ -90,7 +90,7 @@
   "entrypoints": [
     "static/js/runtime-main.bf82f82f.js",
     "static/js/2.a4a1aa23.chunk.js",
-    "static/css/main.7495389d.chunk.css",
-    "static/js/main.16d01b3d.chunk.js"
+    "static/css/main.6f02107f.chunk.css",
+    "static/js/main.48965ce4.chunk.js"
   ]
 }

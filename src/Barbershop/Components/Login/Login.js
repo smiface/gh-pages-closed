@@ -3,20 +3,15 @@ import Context from '../Context'
 import { Link } from 'react-router-dom'
 import '../../Styles/Components/Login/login.css'
 import { Redirect, Route } from "react-router";
+import News from '../News/News'
 
 class Login extends React.Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            // darkmode: Context.darkmode
-            a: 1
+            darkmode: Context.darkmode
         };
-
-
-
-        // this.props.updateAuth = (value, user, cookieKey)
-
     }
 
     createCookie = (user) => {
@@ -30,8 +25,6 @@ class Login extends React.Component {
         let cookie = time + arr.join('')
         return cookie
     }
-
-  
 
     render() {
         return (
@@ -50,9 +43,6 @@ class Login extends React.Component {
 
                                         <button onClick={() => {
 
-
-
-
                                             let LoginRequire = document.getElementById('Login').value
                                             let PasswordRequire = document.getElementById('Password').value
                                             let userRequire = {
@@ -65,37 +55,23 @@ class Login extends React.Component {
                                             }
 
                                             if (LoginRequire.length > 5 && PasswordRequire.length > 5) {
-                                                let fakeJSON = JSON.stringify(userRequire)
+                                                let userString = JSON.stringify(userRequire)
 
                                                 //userNeeded из Data, только если авторизация успешна
-                                                let loginResult = Context.data.fakeLogin(fakeJSON)
-
-
 
                                                 setTimeout(() => {
-                                                    // this.props.updateAuth = (value, user, cookieKey)
-
-                                                    let loginResult = Context.data.fakeLogin(fakeJSON)
+                                                    let loginResult = Context.data.logIn(userString)
                                                     let cookieKey = this.createCookie(loginResult)
                                                     loginResult = JSON.stringify(loginResult)
-                                                    // this.props.updateAuth(true, loginResult, cookieKey)
                                                     this.props.updateAuth(loginResult, cookieKey)
+
                                                 }, 1000);
                                             }
-
-
-
-
-                                            // console.log(fakeJSON)
-                                            // let userRequire = Context.data.users.find(item => item.login == LoginRequire)
-                                            // console.log( userRequire )
-                                            // console.log(Context.data.users[0].login)
                                         }}>
                                             login
                                         </button>
                                     </form>
                                 </main>
-                                {/* <Footer /> */}
                             </>
 
                         )

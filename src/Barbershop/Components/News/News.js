@@ -40,11 +40,6 @@ class News extends React.Component {
                                 <Header />
 
                                 <main className={Context.darkmode ? 'news_component main_dark' : 'news_component main_light'}>
-
-                                    <div className='center'>
-                                        {(localStorage.getItem('currentUser') == null) ? 'null' : 'not null'}
-                                    </div>
-
                                     <div className="col-12">
                                         <div className='col-6 df_jcsb'>
                                             {/* кнопка редактировать новости */}

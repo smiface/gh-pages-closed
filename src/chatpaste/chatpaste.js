@@ -73,25 +73,7 @@ class App extends Component {
                         }}>
                         ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢿⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⡿⠛⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⢻⣿ ⣿⣿⣿⣿⣿⠟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣿ ⣿⣿⡿⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿ ⣿⣿⠇⠄⠄⠄⠄⠄⢀⣀⣀⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣦⡄⠄⠘⢾⣿ ⣿⣏⠄⠄⠄⠄⠄⣠⣿⣿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠄⠈⢿ ⣿⣧⠄⠄⠄⠄⣼⣿⣟⠁⣠⣴⣤⡙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣖⢴⣼ ⣿⣷⠄⠄⠄⢠⣿⣿⡇⣼⣿⠋⠉⠻⢸⣿⣿⣿⣿⣿⠛⠛⠛⠿⣿⢸⢿ ⣿⣿⡆⠄⠄⣾⣿⣿⡇⢿⡿⠂⠄⢀⢸⣿⣿⣿⡿⣷⡿⠟⠻⢦⡈⢸⣿ ⣿⣿⡇⠄⠄⢹⣿⣿⣧⣜⣓⣀⣀⠴⣿⣿⣿⣿⣧⣿⣧⠄⠄⠈⣧⠄⣸ ⣿⡏⠛⣷⢤⡸⣿⣿⣿⣿⣿⣿⣯⣽⣿⣾⣽⣿⣿⣮⣠⣀⣀⣠⣏⡄⣿ ⣥⠈⠰⣧⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⡉⠉⠁⣿⣿⣿⣿⣿⣏⣿ ⣿⣧⣅⠿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⡿⠖⠉⠄⠄⠉⠻⣿⣿⣿⡗⣿ ⣿⣿⣿⣿⣮⡉⢸⣿⣿⣿⣿⣿⣿⣿⠟⠂⠄⣀⣈⣀⣀⣀⣸⣿⣿⡇⣿ ⣿⣿⡿⠿⠿⠿⡜⠻⢿⣿⣿⣿⣿⣿⣶⣾⣿⡟⠉⢙⣿⣿⠿⠿⠋⣠⣿ ⠉⠁⠄⠄⠄⠄⣧⡀⠄⠈⠄⠉⠻⠿⠿⣿⣿⣿⣿⣿⣿⠟⠄⠄⣴⣿⣿ ⠄⠄⠄⠄⠄⠄⣿⣿⣦⡀⠄⠄⠄⠄⠄⠉⠙⠋⠉⠉⠄⠄⠄⠄⠙⠻⣿
                             </button>
-
-                    <button className='copypaste_item'
-                        onClick={(e) => {
-                            this.setState({ textToCopy: e.target.innerText }, () => { navigator.clipboard.writeText(this.state.textToCopy) })
-                        }}>
-                        ⣤⣤⣤⣤⣤⣤⠀⢀⣤⣴⣶⣦⣤⡀⠀⣤⣤⠀⢠⣤⡄⠀⢀⣤⣤⣄⠀⠀⠀ ⠀⣿⣿⠉⠉⣿⣿⢠⣾⣿⠛⠉⠹⣿⣷⡆⣿⣿⣰⣿⣿⠃⠀⣾⣿⣿⣿⡄⠀⠀ ⠀⣿⣿⠀⠀⣿⣿⢸⣿⣿⠀⠀⢀⣿⣿⡇⣿⣿⢿⣿⣷⠀⢸⣿⣯⣼⣿⣷⡀⠀ ⠀⣿⣿⠀⠀⣿⣿⠈⢻⣿⣷⣴⣾⣿⠟⠀⣿⣿⠀⢻⣿⣧⣿⣿⠛⠛⢿⣿⣇⠀ ⠀⠉⠉⠀⠀⠉⠉⠀⠀⠈⠉⠉⠉⠁⠀⠀⠉⠉⠀⠈⠉⠉⠉⠉⠀⠀⠈⠉⠉⠀ ⠀⠀⢠⣤⣤⣤⣤⡄⠀⢀⣤⣤⣤⣤⣀⡀⠀⢠⣤⣤⣤⣤⡄⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⣼⣿⡟⢻⣿⡇⢰⣿⣿⠛⠛⢿⣿⣧⠀⢸⣿⡟⢻⣿⡇⠀⠀⠀⠀⠀⠀⠀ ⠀⢰⣿⣿⠀⢸⣿⡇⢸⣿⣏⠀⠀⢈⣿⣿⠀⣾⣿⠇⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀ ⢠⣼⣿⣿⣤⣼⣿⣧⡼⣿⣿⣤⣤⣾⣿⣟⣤⣿⡿⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀ ⢸⣿⡟⠛⠛⠛⣿⣿⡇⠈⠛⠛⠛⠛⠁⠘⠛⠛⠁⠀⠘⠛⠃⠀⠀⠀⠀⠀⠀⠀ ⠘⠛⠃⠀⣀⣀⣛⣛⣃⠀⠀⣀⣠⣤⣤⣄⡀⠀⣀⣀⣀⣀⣀⢀⣀⣀⣀⣀⣀⠀ ⠀⠀⠀⠀⣿⣿⠛⠛⠛⠀⣴⣿⡿⠛⠻⣿⣿⡄⣿⣿⠛⠛⠛⢸⣿⡟⠛⠛⠛⠀ ⠀⠀⠀⠀⣿⣿⣿⣿⣶⣄⣿⣿⡇⠀⠀⢸⣿⡇⣿⣿⣿⣿⡇⢸⣿⣿⣿⣷⣶⡀ ⠀⠀⠀⠀⣿⣿⣠⣼⣿⡿⢿⣿⣧⣤⣴⣿⣿⠃⣿⣿⣤⣤⣤⢸⣿⣇⣤⣿⣿⠇ ⠀⠀⠀⠀⠛⠛⠛⠛⠋⠀⠀⠙⠛⠛⠛⠛⠁⠀⠛⠛⠛⠛⠛⠘⠛⠛⠛⠛⠉
-                           </button>
-                    <button className='copypaste_item'
-                        onClick={(e) => {
-                            this.setState({ textToCopy: e.target.innerText }, () => { navigator.clipboard.writeText(this.state.textToCopy) })
-                        }}>
-                        ⠄⠄⣀⣤⣄⡀⠄⠄⣀⣀⡀⠄⠄⢀⣀⡀⠄⢀⣀⡀⠄⢀⣀⣀⣀⣀⠄ ⢠⣿⡟⠛⠛⠃⠄⢰⣿⢹⣿⡄⠄⢸⣿⣇⣀⣸⣿⡇⠄⣿⣿⠉⣿⣿⠄ ⢸⣿⣇⠄⠄⡀⢠⣿⣯⣬⣿⣷⠄⢸⣿⡟⠛⢻⣿⡇⠄⣬⣿⠟⣿⣿⠄ ⠄⠙⠿⠿⠿⠇⠾⠿⠁⠄⠸⠿⠇⠸⠿⠇⠄⠸⠿⠇⠰⠿⠏⠄⠿⠿⠄ ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢶⣤⣴⠖⠄⠄⠄⠄⠄⠄⠄⠄ ⠄⢶⣶⡄⢰⣶⠖⢲⣶⡆⢀⣶⡖⢰⣶⡆⠄⣠⣶⣶⠄⠄⠄⠄⠄⠄⠄ ⠄⠈⢿⣷⣿⠏⠄⠄⢻⣿⣾⡿⠄⢸⣿⣇⣴⡿⣿⣿⠄⠄⠄⠄⠄⠄⠄ ⠄⣰⣿⡏⢿⣷⡀⢠⣠⣿⡿⠁⠄⢸⣿⣿⠟⠁⣿⣿⠄⠄⠄⠄⠄⠄⠄ ⠐⠛⠛⠄⠘⠛⠓⠘⠛⠋⠄⠄⠄⠘⠛⠃⠄⠄⠛⠛⠄⠄⠄⠄⠄⠄⠄ ⠄⣠⣴⣶⣶⡄⠄⣠⣴⣶⣦⣄⠄⠄⣠⣴⣶⣶⡄⢰⣶⠄⠄⣠⣶⡆⠄ ⢸⣿⡏⠁⠄⠁⣼⣿⠏⠄⢹⣿⡇⣼⣿⠏⠄⠄⠁⢸⣿⢀⣾⡿⣿⡇⠄ ⠸⣿⣧⣄⣀⡄⠻⣿⣧⣀⣼⣿⠇⠹⣿⣧⣀⣀⡄⢸⣿⣿⠏⠄⣿⡇⠄ ⠄⠈⠙⠛⠛⠁⠄⠉⠙⠛⠋⠁⠄⠄⠈⠙⠛⠛⠁⠘⠛⠁⠄⠄⠛⠃⠄
-                            </button>
-                    <button className='copypaste_item'
-                        onClick={(e) => {
-                            this.setState({ textToCopy: e.target.innerText }, () => { navigator.clipboard.writeText(this.state.textToCopy) })
-                        }}>
-                        ⠄⠄⠄⠄⢀⡎⠒⠐⠾⠛⠙⣆⡢⠑⢣⠄⠄⠄⠄⠄⠄⠄⠄ ⠄⠄⠄⠄⢠⢾⡦⢒⡁⣰⣿⣿⣦⡐⣳⣩⢇⠄⠄⠄⠄⠄⠄⠄ ⠄⠄⠄⠄⡾⣢⢭⠔⣴⠒⢺⣿⣯⠥⠑⠑⡾⡄⠄⠄⠄⠄⠄⠄ ⠄⠄⠄⠄⣷⡡⠁⠣⣿⣿⣿⣿⢿⣶⣠⢪⠒⡟⠄⠄⠄⠄⠄⠄ ⠄⠄⠄⢠⡼⠾⡀⡄⣿⣿⢿⡏⢾⡇⣘⡽⠱⢧⡀⠄⠄⠄⠄⠄ ⠄⠄⠄⠄⠉⠉⠱⢦⣘⢿⣾⣶⢟⣠⡀⡄⢔⠏⠁⠄⠄⠄⠄⠄ ⠄⠄⠄⠄⠄⠄⣠⢼⣿⣷⣶⣾⡷⢸⣗⣯⣿⣶⣿⣶⡄⠄⠄⠄ ⠄⠄⣀⣤⣴⣾⣿⣷⣭⣭⣭⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠄⠄ ⠄⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣸⣿⣿⣧⠄⠄ ⠄⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⢻⣿⣿⡄⠄ ⠄⢸⣿⣮⣿⣿⣿⣿⣿⣿⣿⡟⢹⣿⣿⣿⡟⢛⢻⣷⢻⣿⣧⠄ ⠄⠄⣿⡏⣿⡟⡛⢻⣿⣿⣿⣿⠸⣿⣿⣿⣷⣬⣼⣿⢸⣿⣿⠄ ⠄⠄⣿⣧⢿⣧⣥⣾⣿⣿⣿⡟⣴⣝⠿⣿⣿⣿⠿⣫⣾⣿⣿⡆ ⠄⠄⢸⣿⣮⡻⠿⣿⠿⣟⣫⣾⣿⣿⣿⣷⣶⣾⣿⡏⣿⣿⣿⡇ ⠄⠄⢸.
-                            </button>
+                   
                     <button className='copypaste_item'
                         onClick={(e) => {
                             this.setState({ textToCopy: e.target.innerText }, () => { navigator.clipboard.writeText(this.state.textToCopy) })
@@ -144,27 +126,6 @@ class App extends Component {
                             this.setState({ textToCopy: e.target.innerText }, () => { navigator.clipboard.writeText(this.state.textToCopy) })
                         }}>
                             
-                            ───────▄▀▀▀▀▀▀▀▄────────
-                            ─────▄███████████▄──────
-                            ─────█───▄▀█▀▄───█──────
-                            ─────█▒▒▒▀▄▄▄▀▒▒▒█──────
-                            ─────█▐───███───▌█──────
-                            ──█▀▀█▒▒▒▒▒▒▒▒▒▒▒█▀▀█───
-                            ──█▒▒▌▒▒▒▀▄▄▄▀▒▒▒▌▒▒█───
-                            ──█▒▒▌▒▌▌▒▒▒▒▒▌▌▒▌▒▒█───
-                            ──█▒▒▌▒▌▌▄▄▒▒▒▌▌▒▌▒▒█───
-                            ──█▒▒▌▒▒█░░▀▄▒▒▒▒▌▒▒█───
-                            ──█▒▒▌▒▒▒▀▄░░▀▄▒▒▌▒▒█───
-                            ─▄▀▒▒▌▒▒▒█▀░░░░█▒▌▒▒▀▄──
-                            █▄▄▄▄▄█▀▀▀▄▄▀▄▄▀█▄▄▄▄▄█▄
-                            </button>
-
-                            
-                            <button className='copypaste_item'
-                        onClick={(e) => {
-                            this.setState({ textToCopy: e.target.innerText }, () => { navigator.clipboard.writeText(this.state.textToCopy) })
-                        }}>
-                            
                             ЗАПУСКАЕМ░░
                             ░ГУСЯ░▄▀▀▀▄░ГИДРУ░░
                             ▄███▀░◐░▄▀▀▀▄░░░░░░
@@ -181,7 +142,6 @@ class App extends Component {
                             ░░░░░░░░░░░▌▌░▌▌░░░░░
                             ░░░░░░░░░▄▄▌▌▄▌▌░░░░░
                             </button>
-
                             
                             <button className='copypaste_item'
                         onClick={(e) => {
@@ -199,28 +159,6 @@ class App extends Component {
                             ▒▒█░░░█▄▄▄▄▄▄▄▄▄▄█░█▄▄▄▄▄▄▄▄▄█
                             ▒▒█▄▄█░░█▄▄█░░░░░░█▄▄█░░█▄▄█
                             </button>
-
-                            
-                            <button className='copypaste_item'
-                        onClick={(e) => {
-                            this.setState({ textToCopy: e.target.innerText }, () => { navigator.clipboard.writeText(this.state.textToCopy) })
-                        }}>
-                            
-                            ────────▄▀▀▀▀▀▀▀▄───────
-                            ───────█▒▒▒▒▒▒▒▒▒█──────
-                            ──────█▒▒▒▒▒▒▒▒▒▒█──────
-                            ──────█▒▒▀▄▄▒▄▄▀▒█──────
-                            ─▄▄▄──█▒▒─▀─▒─▀─▒█──────
-                            █░░░▀▄█▒▒▒▒▒▒▒▒▒▒█──────
-                            ▀▄░░░▄▀▀▄▒▀▀▀▀▀▒▒▒▒▀▀▄───
-                            ─▀▄▄▀░░░░▀▄▒▒▒▒▒▒▒▒▒▒▀▄─
-                            ─█▒▀▄░░░░░░▀▄▒▒▒▒▒▒█▒▒█─
-                            ─▀▄▀▒▀▄░░░░░░▀▄▄▒▒▒▒▀▄▀─
-                            ───█▌▌▄▀░░░░░░░░░▀▄▌▌█───
-                            ───▀█▌█░░░░░▄░░░░░██▀───
-                            ─────██▀▄▄▄▄▀▄▄▄▄▀██────
-                            </button>
-
                             
                             <button className='copypaste_item'
                         onClick={(e) => {
@@ -290,11 +228,6 @@ class App extends Component {
                             ──▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀
                             </button>
 
-                            
-                            {/* np */}
-
-                            
-
                 </div>
 
             </div>
@@ -303,33 +236,3 @@ class App extends Component {
 }
 
 export default App
-
-// import React from 'react'
-// import {CopyToClipboard} from 'react-copy-to-clipboard'
-// import './style.css'
-
-// class chatPaste extends React.Component {
-
-//     componentDidMount() {
-//         // 
-
-//     }
-
-//     render() {
-//         return (
-//             <div>
-//                 <input type="text" value="Hello World" id="myInput" />
-//                 <button onclick={() => {
-//                     var copyText = document.getElementById("myInput");
-//                     copyText.select();
-//                     copyText.setSelectionRange(0, 99999)
-//                     document.execCommand("copy");
-//                     alert("Copied the text: " + copyText.value);
-//                 }}>Copy text</button>
-//             </div>
-//         )
-//     }
-
-// }
-
-// export default chatPaste;
